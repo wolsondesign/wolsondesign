@@ -1,9 +1,0 @@
-# robotstxt.org/
-
-User-agent: *
-Disallow: /core/
-Disallow: /fontslate/
-Disallow: /indhibit/
-Disallow: /test/
-Disallow: /vinyl/
-Disallow: /blog/linkspiration/
