@@ -17,7 +17,12 @@
   },
   "homepage": "https://github.com/wolsondesign/wolsondesign#readme",
   "dependencies": {
+    "browser-sync": "^2.11.2",
     "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-jade-find-affected": "^0.2.2",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0"
   }
 }

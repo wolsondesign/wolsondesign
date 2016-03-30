@@ -5,12 +5,11 @@ $blue: rgb(0,116,217);
 $blue-mid: rgb(148,170,176);
 $blue-dark: rgb(108,122,137);
 $red: rgb(233,75,53);
+$grey-light: rgb(249,249,249);
 $grey: rgb(211,211,211);
 $grey-mid: rgb(131,131,131);
 $grey-dark: rgb(34,34,34);
 $yellow: rgb(255,220,0);
-
-/* hello world */
 
 /*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
 
@@ -290,7 +289,7 @@ textarea {
   }
 
   #definition {
-    background: $blue-light;
+    background: $grey-light;
   }
 
   #project {
@@ -629,7 +628,7 @@ textarea {
      padding: 0 15px 0 15px;
    }
 
-   @import 'media-query';
+   @import 'partials/media-query';
 
 /* ==========================================================================
    Helper classes
