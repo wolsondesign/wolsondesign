@@ -1,15 +1,4 @@
-$white: rgb(255,255,255);
-$black: rgb(0,0,0);
-$blue-light: rgb(179,212,252);
-$blue: rgb(0,116,217);
-$blue-mid: rgb(148,170,176);
-$blue-dark: rgb(108,122,137);
-$red: rgb(233,75,53);
-$grey-light: rgb(249,249,249);
-$grey: rgb(211,211,211);
-$grey-mid: rgb(131,131,131);
-$grey-dark: rgb(34,34,34);
-$yellow: rgb(255,220,0);
+@import "partials/base";
 
 /*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
 
@@ -112,55 +101,69 @@ textarea {
      1. FORM
      2. FLOATING LABELS
      3. HOMEPAGE
-     4. NAVIGATION
-     5. MASTHEAD
-     6. RESPONSIVE IMAGE CAPTION HOVER
-     7. RESPONSIVE IMG SCROLL HOVER
-     8. BUTTON
-     9. FLAT LIST
-     10. GENERAL STYLES
-     11. GRID
+     4. ABOUT
+     5. NAVIGATION
+     6. MASTHEAD
+     7. RESPONSIVE IMAGE CAPTION HOVER
+     8. RESPONSIVE IMG SCROLL HOVER
+     9. BUTTON
+     10. FLAT LIST
+     11. GENERAL STYLES
+     12. GRID
      
    ==================================================  */
   /* FORM */
   fieldset {
     border: none;
   }
-  .success p {
-    color: $white;
-    background-color: $yellow;
-    padding: 15px;
+  .success {
+    p {
+      color: $white;
+      background-color: $yellow;
+      padding: 15px;
+    }
   }
    .cd-form::after {
      clear: both;
      content: "";
      display: table;
    }
-   .cd-form legend {
-     padding-bottom: 10px;
-     margin: 20px 0;
-   }
-   .cd-form div {
-     position: relative;
-     margin: 20px 0;
-   }
-   .cd-form h4, .cd-form .cd-label {
-     font-size: 1.3rem;
-     color: $blue-mid;
-     margin-bottom: 10px;
-   }
-   .cd-form .cd-label {
-     display: block;
-   }
+
+   .cd-form {
+    legend {
+      padding-bottom: 10px;
+      margin: 20px 0;
+    }
+
+    div {
+      position: relative;
+      margin: 20px 0;
+    }
+
+    h4, .cd-label {
+      font-size: 1.3rem;
+      color: $blue-mid;
+      margin-bottom: 10px;
+    }
+
+    .cd-label {
+      display: block;
+    }
+
+    label {
+      color: $white;
+    }
+
+   } 
+
    .cd-form input, .cd-form textarea, .cd-form select {
      color: $black;
    }
+
    .cd-form textarea, .cd-form select , .cd-form label {
      font-size: 1.6rem;
    }
-   .cd-form label {
-     color: $white;
-   }
+
    input#cd-name,input#cd-company,input#cd-email,textarea#cd-textarea {
      font-size: 1em;
    }
@@ -269,37 +272,166 @@ textarea {
   }
 
   /* HOMEPAGE */
-  #intro, #definition, #project, #contact {
-    padding: 2.500em 0;
+  .homepage-text {
+    margin: 40px 0;
+    padding: 0 15px;
   }
 
-  #intro .inside, #definition .inside, #project .inside, #contact .inside {
+  .homepage-intro .inside,  .homepage-contact .inside {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
 
-  #intro {
+  .chevron {
+    float: left;
+    position: relative;
+    padding: 28px;
+    height: 102px;
+    width: 100%;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      -webkit-transform: skew(0deg, 6deg);
+      -moz-transform: skew(0deg, 6deg);
+      -ms-transform: skew(0deg, 6deg);
+      -o-transform: skew(0deg, 6deg);
+      transform: skew(0deg, 6deg);
+
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      -webkit-transform: skew(0deg, -6deg);
+      -moz-transform: skew(0deg, -6deg);
+      -ms-transform: skew(0deg, -6deg);
+      -o-transform: skew(0deg, -6deg);
+      transform: skew(0deg, -6deg);
+    }
+  }
+
+  .chevron-intro {
     background: $black;
-     
-    h1, h4 {
+    &:after, &:before {
+      background: $black;
+      top: 37px;
+    }
+  }
+
+  .chevron-project-top {
+    background: $grey;
+    &:after, &:before {
+      background: $grey;
+      top: -40px;
+    }
+  }
+
+  .chevron-project-bottom {
+    background: $grey;
+    &:after, &:before {
+      background: $grey;
+      top: 37px;
+    }
+  }
+
+  .homepage-intro {
+    background: $black;
+    padding-top: 50px;
+    
+    .unitiger {
+      border: 9px solid #fff;
+      border-radius: 0 0 300px 300px;
+      width: 375px;
+      margin: 0 auto 25px auto;
+
+      h1 {
+        margin: 15px 0 -40px 0;
+        background: $black;
+        z-index: 100;
+        line-height: 1.2em;
+        color: $white;
+      }
+    }
+
+    h4 {
+      padding-bottom: .7em;
+      color: $white;
+    }
+
+    h4, p {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
       color: $white;
     }
   }
 
-  #definition {
-    background: $grey-light;
+  #featured-project-1 {
+    background: url("/img/work/everbank/index-project-lo-profile.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    float: left;
+    width: 100%;
+    height: 700px;
   }
 
-  #project {
+  #featured-project-2 {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/font-slate-mockup.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    float: left;
+    width: 100%;
+    height: 700px;
+  }
+
+  #featured-project-3 {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/wedding-invitations-mockup.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    float: left;
+    width: 100%;
+    height: 700px;
+  }
+
+  .featured-project-text {
     background: $grey;
+    float: left;
+    width: 100%;
+
+    .chevron:before,.chevron:after {
+      background: $grey;
+    }
+
+    h5, h3, p {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
   }
 
-  #contact {
+  .homepage-contact {
     background: $grey-dark;
-  
-    h2, h1 {
+    float: left;
+    width: 100%;
+    padding: 150px 0 100px 0;
+
+    h2, p {
       color: $white;
     }
 
@@ -311,31 +443,14 @@ textarea {
       color: $grey-mid;
     }
   }
-
-  #contactblock {
-    position: relative;
-    margin: 0.938em 0;
-  }
    
-  /* Scroll show hide */
-  .scroll-show {
-    background: $grey-dark;
-    border-top: none;
-    height: 64px;
-    position: fixed;
-    bottom: 0;
-    transition: bottom 0.2s ease-in-out;
+  /* ABOUT */
+  .resume-block {
+    @media screen and (min-width: $break-large-width) {
+      margin-top: 20px;
+    }
   }
 
-  .nav-up {
-    bottom: -70px;
-  }
-
-  #navigation.scroll-show {
-    background: none;
-    border-top: none;
-  }
-   
   /* NAVIGATION */
   header#navigation {
     bottom: 0;
@@ -352,10 +467,10 @@ textarea {
 
   li.active {
     background: $blue;
-  }
 
-  li.active a {
-    color: $white;
+    a {
+      color: $white;
+    }
   }
 
   a.menu-link {
@@ -416,22 +531,188 @@ textarea {
     padding: 1.250em;
     margin-top: 1em;
 
+    @media screen and (min-width: $break-large-width) {
+      width: 496px;
+      height: 300px;
+      padding: 0;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      cursor: default;
+      margin-right: 1em;
+      -webkit-box-shadow: 1px 1px 2px $grey-light;
+         -moz-box-shadow: 1px 1px 2px $grey-light;
+              box-shadow: 1px 1px 2px $grey-light;
+    }
+
+    &:hover {
+      img {
+        @media screen and (min-width: $break-large-width) {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        }
+      }
+
+      .mask {
+        @media screen and (min-width: $break-large-width) {
+          opacity: 1;
+        }
+      }
+      
+      h3, a.info {
+        @media screen and (min-width: $break-large-width) {
+          opacity: 1;
+          -webkit-transform: translateY(0px);
+              -ms-transform: translateY(0px);
+                  transform: translateY(0px);
+        }
+      }
+
+      a.info {
+        @media screen and (min-width: $break-large-width) {
+          -webkit-transition-delay: 0.2s;
+                  transition-delay: 0.2s;
+        }
+      }
+    }
+
+    .mask, .content {
+      @media screen and (min-width: $break-large-width) {
+        width: 496px;
+        height: 300px;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .mask {
+      @media screen and (min-width: $break-large-width) {
+        opacity: 0;
+        background-color: rgba(188,216,245, 0.7);
+        -webkit-transition: all 0.4s ease-in-out;
+           -moz-transition: all 0.4s ease-in-out;
+             -o-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+      }
+    }
+
+    img {
+      @media screen and (min-width: $break-large-width) {
+        display: block;
+        position: relative;
+        -webkit-transition: all 0.2s linear;
+           -moz-transition: all 0.2s linear;
+             -o-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+      }
+    }
+
     h3 {
       margin-top: 0;
       text-align: center;
       padding: 0.938em;
+
+      @media screen and (min-width: $break-large-width) {
+        position: relative;
+        transform: translateY(-100px);
+        opacity: 0;
+        -webkit-transition: all 0.2s ease-in-out;
+           -moz-transition: all 0.2s ease-in-out;
+             -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+      }
+    }
+      
+    a.info {
+      @media screen and (min-width: $break-large-width) {
+        opacity: 0;
+        -webkit-transition: all 0.2s ease-in-out;
+           -moz-transition: all 0.2s ease-in-out;
+             -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+      }
     }
   }
+  
+
+
+
    /* RESPONSIVE IMG SCROLL HOVER */
-   .website-display-head img {
-     margin-bottom: 0;
-   }
+    .website-display-head {
+      @media screen and (min-width: $break-medium-width) {
+        width: 500px;
+        height: 21px;
+      }
+
+      img {
+        margin-bottom: 0;
+      }
+    }
+
    p + .website-display-head {
      margin-top: 1.563em;
    }
-   .website-display {
-     margin-bottom: 1.563em;
-   }
+
+    .website-display {
+      margin-bottom: 1.563em;
+      @media screen and (min-width: $break-medium-width) {
+        width: 500px;
+        height: 350px;
+        position: relative;
+        background: $white;
+        overflow: hidden;
+        float: left;
+      }
+
+      img {
+        @media screen and (min-width: $break-medium-width) {
+          border-radius: 0 0 3px 3px;
+          position: absolute;
+          -webkit-transform: translateY(0);
+             -moz-transform: translateY(0);
+              -ms-transform: translateY(0);
+                  transform: translateY(0);
+          transition: 3s all ease;
+        }
+      }
+    }
+
+    .fontslate {
+      img:hover {
+        @media screen and (min-width: $break-medium-width) {
+          -webkit-transform: translateY(-230px);
+             -moz-transform: translateY(-230px);
+              -ms-transform: translateY(-230px);
+                  transform: translateY(-230px);
+        }
+      }
+    }
+
+    .loprofile {
+      img:hover {
+        @media screen and (min-width: $break-medium-width) {
+      -webkit-transform: translateY(-670px);
+         -moz-transform: translateY(-670px);
+          -ms-transform: translateY(-670px);
+              transform: translateY(-670px);
+        }
+      }
+    }
+
+    .recruitprofile {
+      img:hover {
+        @media screen and (min-width: $break-medium-width) {
+          -webkit-transform: translateY(-450px);
+             -moz-transform: translateY(-450px);
+              -ms-transform: translateY(-450px);
+                  transform: translateY(-450px);
+        }
+      }
+    }
+
    /* BUTTON */
    .button, .cd-form input[type="submit"] {
      display: inline-block;
@@ -442,11 +723,28 @@ textarea {
      margin: 15px 0;
      text-transform: uppercase;
    }
+
    .button:hover, .no-touch .cd-form input[type="submit"]:hover {
      border: 1px solid $blue-dark;
      color: $blue-dark;
      background: none;  
    }
+
+  .secondary-button {
+   display: inline-block;
+   border: 1px solid $blue-dark;
+   color: $blue-dark;
+   padding: 10px 23px 10px 24px;
+   margin: 15px 0;
+   text-transform: uppercase;
+  }
+
+  .secondary-button:hover {
+    border: 1px solid $yellow;
+    color: $black;
+    background: $yellow;
+  }
+
    /* FLAT LIST */
    ul.flat-list {
      list-style: none;
@@ -576,9 +874,41 @@ textarea {
   footer h5 {
     margin-bottom: 0;
   }
-  .copyright {
-    margin-top: 20px;
+  
+
+  footer {
+    background: $grey;
+    float: left;
+    width: 100%;
+    padding: 0 0 65px 0;
+
+    .social-links {
+      background: #000; 
+      width: 100%; 
+      float: left;
+      @media screen and (min-width: $break-large-width) {
+        width: 40%;
+      }
+
+      article {
+        float: left;
+        padding: 25px 15px;
+        @media screen and (min-width: $break-large-width) {
+          float: right;
+        }
+      }
+    }
+
+    .copyright {
+      width: 100%; 
+      float: right;
+      padding: 25px 15px;
+      @media screen and (min-width: $break-large-width) {
+        width: 60%;
+      }
+    }
   }
+
   aside h5 {
     text-transform: uppercase;
   }
@@ -587,6 +917,10 @@ textarea {
   }
   .mobile-hide {
     display: none;
+
+    @media screen and (min-width: $break-medium-width) {
+      display: block;
+    }
   }
   /* GRID */
   .col-1-2 {
@@ -628,7 +962,7 @@ textarea {
      padding: 0 15px 0 15px;
    }
 
-   @import 'partials/media-query';
+   @import 'partials/_media-query';
 
 /* ==========================================================================
    Helper classes
