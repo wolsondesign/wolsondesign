@@ -7,7 +7,7 @@ var sass = require('gulp-sass');
 var cssnano = require('gulp-cssnano');
 
 gulp.task('jade', function() {  
-  gulp.src('./src/canvas/*.jade')
+  gulp.src('./src/canvas/**/*.jade')
     .pipe(affected())
     .pipe(jade({
       pretty: true
@@ -17,7 +17,7 @@ gulp.task('jade', function() {
 });
 
 gulp.task('sass', function () {
-  gulp.src('./src/brand/*.scss')
+  gulp.src('./src/brand/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(cssnano())
     .pipe(rename({
@@ -39,8 +39,8 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./src/brand/*.scss', ['sass']);
-  gulp.watch('./src/canvas/*.jade', ['jade']);
+  gulp.watch('./src/brand/**/*.scss', ['sass']);
+  gulp.watch('./src/canvas/**/*.jade', ['jade']);
 });
 
 gulp.task('default', ['jade','sass','watch','browser-sync']);

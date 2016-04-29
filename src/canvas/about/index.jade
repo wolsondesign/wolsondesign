@@ -1,0 +1,54 @@
+doctype html
+html.no-js(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title Who is Andrew Wolson? - Wolson Design
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="apple-touch-icon" href="apple-touch-icon.png")
+  body
+    // [if lt IE 8] <!
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    include ../../components/navigation/navigation-about.jade
+    include ../../components/masthead/masthead.jade
+    main.grid
+      article.col-3-3
+        .col-1-4.mobile-hide
+          |  &nbsp;
+        .col-1-2
+          h1 
+            | Why I am a Designer.
+          p 
+            | It started with a trip to the Dali museum. All of Dali's work blew me away. I was particularly drawn to the Hallucinogenic Toreador. Especially how depending on where you stood in relation to the painting you could see different images in the painting.
+          p 
+            | All of the layers of meaning, the visual richness, and scale inspired me. After that trip I knew I wanted to be a creative. I strive to bring the strength and power to my work. Much like the strength and power Dali brought to his work.
+          h2 
+            |My creative process overview.
+          p 
+            | Design is a game to me. I play with many different elements to create a solution. In the process, I enjoy playing with color or using scale to convey my message. This makes me not take what I do too seriously. It also allows myself to not get stuck in a certain way. By doing this, I am resting on the laurels of the future rather than the past.
+          p 
+            | My process is an evolution. You never know what the outcome of the process will be. Through learning what the problem is, understanding the audience, and understanding the needs of the clients the solution becomes clear. I am driven by the journey to the solution.
+
+          h3 
+            | What is a Unitiger?
+          p 
+            | noun | uni·tiger | \ˈyü-nə-,tī-gər\
+          ol
+            li 
+              | A creative professional that works in the print, web design, and web developemnt fields.
+            li 
+              | A badass Unicorn.
+        .col-1-4.resume-block
+          h5
+            | Work:<br/><em>Digital UX Designer</em><br> EverBank<br>December 2011 - present
+          h5 
+            | Education:<br/><em>Savannah College of Art and Design</em><br>BFA, Graphic Design<br>2009 – 2011
+          p 
+            a.button(href="/andrew_wolson_resume.pdf") 
+              | download my resume
+    footer.grid
+      article.col-3-3
+        include ../../components/footer/personal-links.jade
+        include ../../components/footer/copyright.jade
+    include ../../components/script-calls/script-calls.jade
