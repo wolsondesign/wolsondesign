@@ -1,0 +1,48 @@
+doctype html
+html.no-js(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title FontSlate is a learning resouce for Typographers. - Wolson Design
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="apple-touch-icon" href="apple-touch-icon.png")
+  body
+    // [if lt IE 8] <!
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    include ../../components/navigation/navigation-work.jade
+    include ../../components/masthead/masthead.jade
+    main.grid
+      section.col-3-3
+        .col-1-4
+          h5 Role:<br><em>Founder, Creative Director</em>
+          h5 Context:<br><em>branding and site design</em>
+          h5 Website:<br><em><a href="http://fontslate.info/">fontslate.info</a></em>
+        .col-1-2
+          h1 Born from a thirst for knowledge
+          p FontSlate is a personal project of mine that was originally a student project. I created the site because professors would tell me I was using the wrong type. But when I asked them why. They would have no answer for me. After researching and finding font resources are few and far between. I decided to create a site that displayed everything I had learned about typography.
+      section.col-3-3
+        .col-3-4
+          img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/fontslate-brand-guide.png")
+        .col-1-4
+          img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/fontslate-type-exploration.png")
+      section.col-3-3
+        .col-1-4
+          | &nbsp;
+        .col-1-2
+          h2 branding
+          p The name combines the idea of the site fonts and slate represents the material that black boards are made from. The logo is a circle to represent a period. Meaning we are the definitive source for Font information, period. The gold stands for the quality of the information we provide.
+          .website-display-head
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/desktop-mockup.png")
+          .website-display.fontslate
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/fontslate-home-page-layout.jpg")
+          h2 website
+          p The site was designed to prominently display the basic information. But it also keeps a space for more detailed information. I used expand and collapse navigation so the user can get to all of the sites content in one click.
+          hr
+      section.col-3-3
+        ul.flat-list(align="center")
+          li
+            p  
+              a.secondary-button(href="/work") View all projects &#x2192;
+    include ../../components/footer/footer.jade  
+    include ../../components/script-calls/script-calls.jade
