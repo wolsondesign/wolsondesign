@@ -324,23 +324,23 @@ textarea {
     background: $black;
     &:after, &:before {
       background: $black;
-      top: 37px;
+      top: 50px;
     }
   }
 
   .chevron-project-top {
-    background: $grey;
+    background: $white;
     &:after, &:before {
-      background: $grey;
-      top: -40px;
+      background: $white;
+      top: -50px;
     }
   }
 
   .chevron-project-bottom {
-    background: $grey;
+    background: $white;
     &:after, &:before {
-      background: $grey;
-      top: 37px;
+      background: $white;
+      top: 50px;
     }
   }
 
@@ -367,7 +367,7 @@ textarea {
       padding-bottom: .7em;
       color: $white;
     }
-
+ 
     h4, p {
       max-width: 700px;
       margin: 0 auto;
@@ -377,7 +377,7 @@ textarea {
   }
 
   #featured-project-1 {
-    background: url("/img/work/everbank/index-project-lo-profile.jpg") no-repeat center center fixed; 
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/homepage-lo-pages-desktop.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -388,7 +388,7 @@ textarea {
   }
 
   #featured-project-2 {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/font-slate-mockup.jpg") no-repeat center center fixed; 
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/homepage-fontslate-desktop.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -399,7 +399,7 @@ textarea {
   }
 
   #featured-project-3 {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/wedding-invitations-mockup.jpg") no-repeat center center fixed; 
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/homepage-wedding-desktop.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -410,13 +410,9 @@ textarea {
   }
 
   .featured-project-text {
-    background: $grey;
+    background: $white;
     float: left;
     width: 100%;
-
-    .chevron:before,.chevron:after {
-      background: $grey;
-    }
 
     h5, h3, p {
       max-width: 700px;
@@ -426,7 +422,7 @@ textarea {
   }
 
   .homepage-contact {
-    background: $grey-dark;
+    background: $black;
     float: left;
     width: 100%;
     padding: 150px 0 100px 0;
@@ -637,9 +633,6 @@ textarea {
     }
   }
   
-
-
-
    /* RESPONSIVE IMG SCROLL HOVER */
     .website-display-head {
       @media screen and (min-width: $break-medium-width) {
@@ -784,115 +777,117 @@ textarea {
      from { opacity: 0; }
      to   { opacity: 1; }
    }
-   @-o-keyframes fadein {
-     from { opacity: 0; }
-     to   { opacity: 1; }
-   }
-   img {
-     max-width: 100%;
-     height: auto;
-     margin-bottom: 1.563em;
-   }
-   h1, h2, h3, h4, h5, h6, p {
-     margin: 0;
-     color: rgb(17,17,17);
-   }
-   h1 {
-     font-size: 2.188em;
-     line-height: 1.3em;
-     margin-bottom: 20px;
-   }
-   h2 {
-     font-size: 1.625em;
-     line-height: 1.250em;
-     margin-bottom: 15px;
-   }
-   h4 {
-     font-size: 1.313em;
-     line-height: 1.250em;
-   }
-   h5 {
-     font-size: 0.875em;
-     line-height: 1.5em;
-     margin-bottom: 15px;
-   }
-   a {
-     text-decoration: none;
-     color: $blue;
-   }
-   a:hover {
-     color: $blue-dark;
-     transition: all 0.9s ease;
-   }
-   ul {
-     -webkit-margin-before: 0;
-     -webkit-margin-after: 0;
-   }
-   p, ul {
-     font-size: 1.2em;
-     line-height: 1.4em;
-     -webkit-padding-start: 0;
-   }
-   p a {
-     font-size: 1.000em; 
-   }
+  @-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.563em;
+  }
+   
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    color: rgb(17,17,17);
+  }
+   
+  h1 {
+    font-size: 2.188em;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+  }
+   
+  h2 {
+    font-size: 1.625em;
+    line-height: 1.250em;
+    margin-bottom: 15px;
+  }
+   
+  h4 {
+    font-size: 1.313em;
+    line-height: 1.250em;
+  }
+   
+  h5 {
+    font-size: 0.875em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+  }
+   
+  a {
+    text-decoration: none;
+    color: $blue;
+  }
+   
+  a:hover {
+    color: $blue-dark;
+    transition: all 0.9s ease;
+  }
+   
+  ul {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+  }
+   
+  p, ul {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    -webkit-padding-start: 0;
+  }
+   
+  p a {
+    font-size: 1.000em; 
+  }
+
   p {
     margin-bottom: 1.5em;
   }
+
   h3 + p {
     margin-bottom: 20px;
   }
+
   hr {
     border: 0;
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
+
   .caption {
     color: $grey-dark;
     font-size: 1em;
     line-height: 1.2em;
   }
+
   main.grid {
     margin-bottom: 90px;
   }
-  main img, footer.grid img {
+  
+  main img {
     border: 1px solid $grey-dark;
   }
-  .last-project img {
-    width: 100%;
-  }
-  footer.grid {
-    margin-bottom: 100px;
-  }
-  footer img {
-    margin-bottom: 0;
-  }
-  footer h3 {
-    margin-bottom: 30px;
-  }
-  footer h5 {
-    margin-bottom: 0;
-  }
   
-
-  footer {
-    background: $grey;
+  footer { 
+    background: $grey-light;
     float: left;
     width: 100%;
-    padding: 0 0 65px 0;
+    padding-bottom: 65px;
 
     .social-links {
-      background: #000; 
+      background: $grey-dark; 
       width: 100%; 
       float: left;
+      color: $white;
       @media screen and (min-width: $break-large-width) {
-        width: 40%;
+        width: 50%;
       }
 
       article {
         float: left;
-        padding: 25px 15px;
+        padding: 25px;
         @media screen and (min-width: $break-large-width) {
           float: right;
         }
@@ -902,9 +897,9 @@ textarea {
     .copyright {
       width: 100%; 
       float: right;
-      padding: 25px 15px;
+      padding: 30px 0 25px 25px;
       @media screen and (min-width: $break-large-width) {
-        width: 60%;
+        width: 50%;
       }
     }
   }
