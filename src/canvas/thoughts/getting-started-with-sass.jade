@@ -1,0 +1,76 @@
+doctype html
+html.no-js(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title know how: getting started with Sass - Wolson Design
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="apple-touch-icon" href="apple-touch-icon.png")
+  body 
+    // [if lt IE 8] <!
+      <p class="browserupgrade">You are using an 
+        strong outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser to improve your experience.
+    include ../../components/navigation/navigation-thoughts.jade
+    include ../../components/masthead/masthead.jade
+    main.grid
+      article.col-3-3
+        .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="")
+          h5(itemprop="name") Know how:
+            br 
+            | Getting started with Sass.
+          p
+            span(itemprop="author" itemscope="" itemtype="http://schema.org/Person")
+              span(itemprop="name") Andrew Wolson
+              br
+              em
+                meta(itemprop="datePublished" content="2014-01-02")
+                | January 2, 2014
+        .col-1-2
+          p I have been interested in learning Sass for a long time, but I have had a problem finding quality information on Sass. What I could find was written for an advanced developer, not for someone just learning the language. My biggest worry was how much time and effort that would go into learning this language.
+          p I received 
+            a(href="http://www.abookapart.com/products/sass-for-web-designers" title="Sass for Web Designers written by Dan Cederholm" target="_blank") Sass for web designers
+            |  for Christmas, and after reading the first chapter, all my worries dissipated. I came to find out that the CSS markup that you have come to love can be used with the Sass markup! That was great because it allowed me to transition into the language and convert my stylesheets as I learned the Sass.
+          p This book has helped me tremendously! Now I want to give back what I have learned. So below you will find how to set up Sass for your next web project.
+          h2 Sass is not an attitude problem, it fixes problems         
+          p Sass acts like a shorthand for CSS. It is meant to simplify and streamline your code to make coding faster and easier to maintain. You code using the Sass vernacular then the Sass is processed to create the CSS for your document. You might be asking: “What is processing this code?” Sass uses a language called 
+            a(href="https://www.ruby-lang.org/" title="A programming language created by Yukihiro Matsumoto." target="_blank") Ruby
+            |. Here is the first part of the setup:
+          h2 1. Make sure Ruby is installed on your computer          
+          p Mac: Fortunately Mac OSX comes with Ruby already installed. Please move on to the next step.
+          p PC: Unfortunately you will have to download Ruby and Install it on your PC. 
+            a(href="http://rubyinstaller.org/" title="The official Sass site sugests PC owners use this download for installing ruby." target="_blank") Ruby Installer
+            |  is a great place to find the latest version of Ruby to install. Once you have installed Ruby move on to the next step.
+          h2 2. Open terminal and type:
+          p $ gem install sass
+          h2 3. Tell Sass what files to automatically update
+          p You will need to have two files set up. The regular Sass file and then the CSS file that will contain the processed code. The prompt you use depends on the file structure. Sass uses the .scss file extension.
+          h3 If the files are in the same folder
+          p $ sass --watch example.scss:example.css
+          h3 If the files are part of a directory
+          p $ sass --watch CSS-folder/sass:SASS-folder
+          p Keep in mind that the file names don’t need to match. So you could use: $ sass --watch rock.scss:paper.css if you wanted.
+          p Once you have entered the input any change to the .scss file will automatically be process and added to the .css file. If you are watching the two files, don’t make any edits to the .css file. Because your changes will be overwritten once you make a change to the .scss file.
+          p You are now ready to code Sass. Keep reading if you don’t want to use the terminal or you would like to learn more about Sass.
+          h2 Alternatives to the terminal
+          p I’m not going to lie, it was hard for me to get used to the simple prompts. So, I can see how someone might want to avoid using the terminal. Below is an alternative solution to using the terminal.
+          p 
+            a(href="http://mhs.github.io/scout-app/" title="This is a great alternative for people who don't want to use the terminal." target="_blank") Scout
+            |  is a free app for Mac and PC that lets you manage your Sass without the prompt mentioned above. Best of all its free. Once you have downloaded the program and told the app which file to watch you are ready to go.
+          h2 Get your learn on
+          p For further information regarding how to use Sass. I would suggest your read 
+            a(href="http://www.abookapart.com/products/sass-for-web-designers" title="Sass for Web Designers written by Dan Cederholm" target="_blank") Sass for web designers
+            |. This book is a great read because it is not overly complicated, yet thorough, and a great diving board for getting into Sass.
+          p 
+            a(href="http://thesassway.com/" title="Articles on Sass for all skill levels.") The Sass way
+            |  is a great site to check out articles related to Sass.
+          p Last but not least, check out the 
+            a(href="http://codepen.io/wolsondesign/pen/dCxAn" title="This is a filter I created for a new site I am working on." target="_blank") pen
+            |  that I created using Sass.
+          hr
+          ul.flat-list(align="center")
+            li
+              p  
+                a.secondary-button(href="/thoughts") View all thoughts &#x2192;
+    include ../../components/footer/footer.jade
+    include ../../components/script-calls/script-calls.jade
