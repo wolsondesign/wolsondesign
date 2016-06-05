@@ -41,10 +41,10 @@ html {
  */
 
 hr {
+  border-top: 1px solid $grey;
+  border: 0;
   display: block;
   height: 1px;
-  border: 0;
-  border-top: 1px solid $grey;
   margin: 1em 0;
   padding: 0;
 }
@@ -87,9 +87,9 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-  margin: 0.2em 0;
   background: $grey;
   color: $black;
+  margin: 0.2em 0;
   padding: 0.2em 0;
 }
 
@@ -131,18 +131,18 @@ textarea {
 
    .cd-form {
     legend {
-      padding-bottom: 10px;
       margin: 20px 0;
+      padding-bottom: 10px;
     }
 
     div {
-      position: relative;
       margin: 20px 0;
+      position: relative;
     }
 
     h4, .cd-label {
-      font-size: 1.3rem;
       color: $blue-mid;
+      font-size: 1.3rem;
       margin-bottom: 10px;
     }
 
@@ -177,16 +177,16 @@ textarea {
              appearance: none;
    }
    .cd-form input[type="text"],.cd-form input[type="email"],.cd-form textarea,.cd-form select {
-     padding: 12px;
-     border: 1px solid $black;
      background-color: $white;
      border-radius: .25em;
+     border: 1px solid $black;
      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+     padding: 12px;
    }
    .cd-form input[type="text"]:focus,.cd-form input[type="email"]:focus,.cd-form textarea:focus,.cd-form select:focus {
-     outline: none;
      border-color: #2c97de;
      box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+     outline: none;
    }
    .cd-form .cd-select {
      position: relative;
@@ -194,15 +194,15 @@ textarea {
    .cd-form .cd-select::after {
      /* arrow icon for select element */
      content: '';
+     display: block;
+     height: 16px;
+     margin-top: -8px;
+     pointer-events: none;
      position: absolute;
-     z-index: 1;
      right: 16px;
      top: 50%;
-     margin-top: -8px;
-     display: block;
      width: 16px;
-     height: 16px;
-     pointer-events: none;
+     z-index: 1;
    }
    .cd-form select {
      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -225,14 +225,14 @@ textarea {
      overflow: auto;
    }
    .cd-form .error-message p {
+     -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
      background: $red;
+     border-radius: .25em;
      color: $white;
      font-size: 1.4rem;
-     text-align: center;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-     border-radius: .25em;
      padding: 16px;
+     text-align: center;
    }
 
   .cd-form .error {
@@ -528,8 +528,8 @@ textarea {
     margin-top: 1em;
 
     @media screen and (min-width: $break-large-width) {
-      width: 496px;
-      height: 300px;
+      width: 48.6%;
+      height: 365px;
       padding: 0;
       float: left;
       overflow: hidden;
@@ -575,8 +575,8 @@ textarea {
 
     .mask, .content {
       @media screen and (min-width: $break-large-width) {
-        width: 496px;
-        height: 300px;
+        width: 100%;
+        height: 365px;
         position: absolute;
         overflow: hidden;
         top: 0;
@@ -708,12 +708,12 @@ textarea {
 
    /* BUTTON */
    .button, .cd-form input[type="submit"] {
-     display: inline-block;
-     border: 1px solid $yellow;
      background: $yellow;
+     border: 1px solid $yellow;
      color: $black;
-     padding: 10px 23px 10px 24px;
+     display: inline-block;
      margin: 15px 0;
+     padding: 10px 23px 10px 24px;
      text-transform: uppercase;
    }
 
@@ -724,11 +724,11 @@ textarea {
    }
 
   .secondary-button {
-   display: inline-block;
    border: 1px solid $blue-dark;
    color: $blue-dark;
-   padding: 10px 23px 10px 24px;
+   display: inline-block;
    margin: 15px 0;
+   padding: 10px 23px 10px 24px;
    text-transform: uppercase;
   }
 
@@ -752,14 +752,14 @@ textarea {
              box-sizing: border-box;
    }
    body {
-   font-family: Verdana, Geneva, sans-serif;
-     margin: 0;
-     overflow-x: hidden;
-     -webkit-animation: fadein 2s;
-        -moz-animation: fadein 2s;
-         -ms-animation: fadein 2s;
-          -o-animation: fadein 2s;
-             animation: fadein 2s;
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    -webkit-animation: fadein 2s;
+       -moz-animation: fadein 2s;
+        -ms-animation: fadein 2s;
+         -o-animation: fadein 2s;
+            animation: fadein 2s;
    }
    @keyframes fadein {
      from { opacity: 0; }
@@ -783,9 +783,9 @@ textarea {
   }
 
   img {
-    max-width: 100%;
     height: auto;
     margin-bottom: 1.563em;
+    max-width: 100%;
   }
    
   h1, h2, h3, h4, h5, h6, p {
@@ -870,17 +870,18 @@ textarea {
     border: 1px solid $grey-dark;
   }
   
-  footer { 
+  footer {
     background: $grey-light;
+    bottom: 55px;
     float: left;
+    position: relative;
     width: 100%;
-    padding-bottom: 65px;
 
     .social-links {
       background: $grey-dark; 
-      width: 100%; 
-      float: left;
       color: $white;
+      float: left;
+      width: 100%; 
       @media screen and (min-width: $break-large-width) {
         width: 50%;
       }
@@ -895,9 +896,9 @@ textarea {
     }
 
     .copyright {
-      width: 100%; 
       float: right;
       padding: 30px 0 25px 25px;
+      width: 100%; 
       @media screen and (min-width: $break-large-width) {
         width: 50%;
       }
