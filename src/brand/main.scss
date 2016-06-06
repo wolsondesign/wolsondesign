@@ -110,6 +110,7 @@ textarea {
      10. FLAT LIST
      11. GENERAL STYLES
      12. GRID
+     13. BROWSER SUPPORT
      
    ==================================================  */
   /* FORM */
@@ -413,6 +414,7 @@ textarea {
     background: $white;
     float: left;
     width: 100%;
+    text-align: center;
 
     h5, h3, p {
       max-width: 700px;
@@ -741,10 +743,13 @@ textarea {
    /* FLAT LIST */
    ul.flat-list {
      list-style: none;
+     text-align: center;
    }
+
    .flat-list li {
      display: inline-block;
    }
+   
    /* GENERAL STYLES */
    *, *:after, *:before {
      -webkit-box-sizing: border-box;
@@ -934,29 +939,54 @@ textarea {
   .col-1-4 {
     width: 100%;
   }
-   [class*='col-'] {
-     float: left;
-     padding-right: 0;
-   }
-   [class*='col-']:last-of-type {
-     padding-right: 0;
-   }
-   .grid:after {
-     content: "";
-     display: table;
-     clear: both;
-   }
-   .grid-pad {
-     padding: 20px 0 20px 20px;
-   }
-   .grid-pad > [class*='col-']:last-of-type {
-     padding-right: 20px;
-   }
-   .grid {
-     max-width: 75em;
-     margin: 0 auto;
-     padding: 0 15px 0 15px;
-   }
+  [class*='col-'] {
+    float: left;
+    padding-right: 0;
+  }
+  [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .grid-pad {
+    padding: 20px 0 20px 20px;
+  }
+  .grid-pad > [class*='col-']:last-of-type {
+    padding-right: 20px;
+  }
+  .grid {
+    max-width: 75em;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+  }
+
+  /* BROWSER SUPPORT */
+  @-moz-document url-prefix() {
+    .chevron-intro {
+      margin-top: -19px;
+    }
+    footer {
+      article {
+        .flat-list {
+          margin-top: 9px;
+        }
+      }
+      .copyright {
+        h5 {
+          padding-top: 10px;
+        }
+      }
+    }
+    .flat-list {
+      &.secondary-button {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
 
    @import 'partials/_media-query';
 
