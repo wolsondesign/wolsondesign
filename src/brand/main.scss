@@ -389,7 +389,7 @@ textarea {
   }
 
   #featured-project-2 {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/homepage-fontslate-desktop.jpg") no-repeat center center fixed; 
+    background: url("/img/work/aiga-jacksonville/aiga-jacksonville-hompage-cover.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -400,7 +400,7 @@ textarea {
   }
 
   #featured-project-3 {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/homepage-wedding-desktop.jpg") no-repeat center center fixed; 
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/homepage-fontslate-desktop.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -671,6 +671,17 @@ textarea {
               -ms-transform: translateY(0);
                   transform: translateY(0);
           transition: 3s all ease;
+        }
+      }
+    }
+
+    .aigajacksonville {
+      img:hover {
+        @media screen and (min-width: $break-medium-width) {
+      -webkit-transform: translateY(-790px);
+         -moz-transform: translateY(-790px);
+          -ms-transform: translateY(-790px);
+              transform: translateY(-790px);
         }
       }
     }
