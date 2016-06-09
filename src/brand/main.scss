@@ -395,7 +395,7 @@ textarea {
   }
 
   #featured-project-1 {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/homepage-lo-pages-desktop.jpg") no-repeat center center fixed; 
+    background: url("/img/work/everbank/everbank-loan-officer-website-homepage-cover.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -625,7 +625,7 @@ textarea {
     .mask {
       @media screen and (min-width: $break-large-width) {
         opacity: 0;
-        background-color: rgba(188,216,245, 0.7);
+        background-color: rgba(255, 255, 255, 0.7);
         -webkit-transition: all 0.4s ease-in-out;
            -moz-transition: all 0.4s ease-in-out;
              -o-transition: all 0.4s ease-in-out;
