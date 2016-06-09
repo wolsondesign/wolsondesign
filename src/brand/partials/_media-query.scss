@@ -63,17 +63,7 @@
   }
   /* NAVIGATION */
   li.active {
-    border-top: 5px solid $blue;
-    background: none;
-  }
-
-  #navigation {
-    li:hover {
-      border-top: 5px solid $blue-dark;;
-      background: none;
-      transition: all 0.2s linear;
-      color: $blue-dark;
-    }
+    
   }
 
   li.active a {
