@@ -120,7 +120,7 @@ textarea {
   .success {
     p {
       color: $white;
-      background-color: $yellow;
+      background-color: $grey-dark;
       padding: 15px;
     }
   }
@@ -525,7 +525,7 @@ textarea {
 
   nav[role=navigation] {
     &.active {
-      max-height: 15em;
+      max-height: 17em;
     }
     
     ul {
@@ -1023,21 +1023,33 @@ textarea {
 
   /* BROWSER SUPPORT */
   @-moz-document url-prefix() {
+    .chevron {
+      &:before {
+        width: 50.1%;
+      }
+      &:after {
+        width: 50.1%;
+      }
+    }
+
     .chevron-intro {
       margin-top: -19px;
     }
+
     footer {
       article {
         .flat-list {
           margin-top: 9px;
         }
       }
+
       .copyright {
         h5 {
           padding-top: 10px;
         }
       }
     }
+
     .flat-list {
       &.secondary-button {
         margin-right: auto;
