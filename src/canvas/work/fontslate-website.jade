@@ -3,8 +3,8 @@ html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title FontSlate is a learning resouce for Typographers. - Wolson Design
-    meta(name="description" content="")
+    title FontSlate :: Andrew Wolson :: UX/UI Designer, Print Designer
+    meta(name="description" content="FontSlate is a website that I designed to be a repository of Typographic information.")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body
@@ -15,11 +15,15 @@ html.no-js(lang="en")
     main.grid
       section.col-3-3
         .col-1-4
-          h5 Role:<br><em>Founder, Creative Director</em>
-          h5 Context:<br><em>branding and site design</em>
-          h5 Website:<br><em><a href="http://fontslate.info/">fontslate.info</a></em>
+          h6 Role:
+          h5 Founder, Creative Director
+          h6 Context:
+          h5 branding and site design
+          h6 Website:
+          h5
+            a(href="http://fontslate.info/") fontslate.info
         .col-1-2
-          h1 Overview
+          h1 FontSlate
           p FontSlate started as a student project at SCAD. Our professor gave us an open project. We could design anything we wanted. These types of projects can be daunting. Because of how open they are. But I found a strong direction for the project by thinking of a problem I had at school. Professors would tell me I was using the wrong font for a project. But when I asked why it was the wrong font. I would not get a straight answer. 
           p It wasn't until I started looking up fonts and their history. I found fonts exist to for use in specific contexts. Fonts are designed for use in airports, signs, phone books, etc.. I created this website as a solution to those questions my professors could not answer.
       section.col-3-3
@@ -40,10 +44,6 @@ html.no-js(lang="en")
           h2 Website strategy
           p The site has four basic categories that make it easy for the user to find the information they are looking for. The content strategy for the site revolves around highlighting basic information of content. As I add more information to the site. The basic information will take a back seat. So the expert information can shine.
           hr
-      section.col-3-3
-        ul.flat-list
-          li
-            p  
-              a.secondary-button(href="/work") View all projects &#x2192;
+      include ../../components/cta/work.jade
     include ../../components/footer/footer.jade  
     include ../../components/script-calls/script-calls.jade

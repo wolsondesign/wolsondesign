@@ -47,4 +47,3 @@ jQuery(document).ready(function($){
     });
   
 });
-

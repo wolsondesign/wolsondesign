@@ -3,8 +3,8 @@ html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title I'm Board 6: Thoughts become reality through sketches - Wolson Design
-    meta(name="description" content="")
+    title I'm Board 6: Thoughts become reality through sketches :: Andrew Wolson :: UX/UI Designer, Print Designer
+    meta(name="description" content="This story shows my initial sketches for the skateboard I made for the I'm Board 6 art show.")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body 
@@ -16,15 +16,11 @@ html.no-js(lang="en")
     main.grid
       article.col-3-3
         .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="")
-          h5(itemprop="name") I'm Board 6: Thoughts become reality through sketches.
-          p
-            span(itemprop="author" itemscope="" itemtype="http://schema.org/Person")
-              span(itemprop="name") Andrew Wolson
-              br
-              em
-                meta(itemprop="datePublished" content="2016-03-27") 
-                | March 27, 2016
+          h5
+            meta(itemprop="datePublished" content="2016-03-27") 
+            | March 27, 2016
         .col-1-2
+          h1 I'm Board 6: Thoughts become reality through sketches
           p 
             strong Note:
             em This post is a continuation of a 
@@ -53,13 +49,11 @@ html.no-js(lang="en")
           p Now that I had my creative direction solidified. I refined the sketches to the point where I was comfortable moving to production. If you would like to see all of my sketches that I made for the show. I have posted them on my 
             a(href="http://wolsondesign.tumblr.com/post/141409057336/these-are-the-sketches-for-a-skateboard-i-designed" target="_blank") Tumblr
             |.
-          p 
-            a(href="/thoughts/im-board-6-from-paper-to-the-board.html") See where the rubber met the road.
+          ul.flat-list
+            li
+              p  
+                a.btn-white-bg(href="/thoughts/im-board-6-from-paper-to-the-board.html") See where the rubber met the road. &#x2192;
           hr
-        ul.flat-list
-          li
-            p  
-              a.secondary-button(href="/thoughts") View all thoughts &#x2192;
-
+        include ../../components/cta/thoughts.jade
     include ../../components/footer/footer.jade
     include ../../components/script-calls/script-calls.jade

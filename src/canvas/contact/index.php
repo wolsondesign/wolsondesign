@@ -21,8 +21,8 @@ if($_POST["submit"]) {
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Need to reach Andrew Wolson? Look no further. - Wolson Design</title>
-        <meta name="description" content="">
+        <title>Contact :: Andrew Wolson :: UX/UI Designer with a little Print</title>
+        <meta name="description" content="This page is the best way to get intouch with me. Considering my pager is in the shop and all.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">

@@ -3,8 +3,8 @@ html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title process work: mehnimals the gorilla - Wolson Design
-    meta(name="description" content="")
+    title Process Work: Mehnimals the gorilla :: Andrew Wolson :: UX/UI Designer, Print Designer
+    meta(name="description" content="I created another shirt in my series called Mehnimals. This is how I came up with the design.")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body 
@@ -16,15 +16,11 @@ html.no-js(lang="en")
     main.grid
       article.col-3-3
         .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="")
-          h5(itemprop="name") process work: mehnimals the gorilla
-          p
-            span(itemprop="author" itemscope="" itemtype="http://schema.org/Person")
-              span(itemprop="name") Andrew Wolson
-              br
-              em
-                meta(itemprop="datePublished" content="2014-1-29") 
-                | January 29, 2014
+          h5
+            meta(itemprop="datePublished" content="2014-1-29") 
+            | January 29, 2014
         .col-1-2
+          h1 Process Work: Mehnimals the gorilla
           p I created an earlier blog post called Mehnimals 
             a(href="http://wolsondesign.com/blog/mehnimals-the-bear-dont-care.html") the bear don't care
             |. This was a series of illustrations I created for a t-shirt. I submitted the design to 
@@ -45,9 +41,6 @@ html.no-js(lang="en")
             a(href="https://cottonbureau.com/") Cotton Bureau
             |. I haven't submitted it yet, because of the other projects I have going on. But The should be submitted soon. Lets see where it goes.
           hr
-        ul.flat-list
-          li
-            p  
-              a.secondary-button(href="/thoughts") View all thoughts &#x2192;
+        include ../../components/cta/thoughts.jade
     include ../../components/footer/footer.jade
     include ../../components/script-calls/script-calls.jade

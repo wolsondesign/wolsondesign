@@ -3,8 +3,8 @@ html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title process work: midnight society brewery logo - Wolson Design
-    meta(name="description" content="")
+    title Process Work: Midnight Society Brewery logo :: Andrew Wolson :: UX/UI Designer, Print Designer
+    meta(name="description" content="This is one of the side projects that I work on. This article shows how I created the bradning for the company.")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body 
@@ -16,18 +16,14 @@ html.no-js(lang="en")
     main.grid
       article.col-3-3
         .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="")
-          h5(itemprop="name") process work: midnight society brewery logo
-          p
-            span(itemprop="author" itemscope="" itemtype="http://schema.org/Person")
-              span(itemprop="name") Andrew Wolson
-              br
-              em
-                meta(itemprop="datePublished" content="2013-10-28") 
-                | October 28, 2013
+          h5
+            meta(itemprop="datePublished" content="2013-10-28") 
+            | October 28, 2013
         .col-1-2
+          h1 Process Work: Midnight Society Brewery logo
           p Midnight Society Brewing is a side project that I work on with my girlfriend (now wife) Meagan. We brew our own beer, produce beer ice cream, bottle cap magnets, and beer bottle tumblers. This is the sister company of my t-shirt business Midnight Society Apparel. The branding for both companies go hand in hand with each other.
           p We came up with the name for the company while brainstorming. The discussions we had revolved around our favorite things from our childhood. We decided to make the company name a reference to one of our favorite shows 
-            a(href="https://en.wikipedia.org/wiki/Are_You_Afraid_of_the_Dark%3F")&ldquo;Are You Afraid of the Dark?&rdquo;
+            a(href="https://en.wikipedia.org/wiki/Are_You_Afraid_of_the_Dark%3F") &ldquo;Are You Afraid of the Dark?&rdquo;
             |. The group that told stories in the show call themselves &ldquo;The Midnight Society&rdquo;.
           p The inspiration for the logo came from the fire pit that the children told their stories around. This fire pit connected all the storytellers around it. We started this project as a way to connect with fellow beer enthusiasts. The fire represents that connection and symbolizes our passion toward the product we create.
           img(src="/img/thoughts/midnight-society-brewery-logo-process-1.jpg" alt="Early sketches for Midnight Society Brewing primary logo.")
@@ -53,9 +49,6 @@ html.no-js(lang="en")
           img(src="/img/thoughts/midnight-society-brewery-logo-process-10.jpg" alt="The bottle caps and beer label together for Midnight Society Brewing.")
           p We put a lot of hard work into the branding and our products. It is so rewarding to see everything come together.
           hr
-        ul.flat-list
-          li
-            p  
-              a.secondary-button(href="/thoughts") View all thoughts &#x2192;
+        include ../../components/cta/thoughts.jade
     include ../../components/footer/footer.jade
     include ../../components/script-calls/script-calls.jade

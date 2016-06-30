@@ -3,8 +3,8 @@ html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title process work: share your inspiration, creating my design links - Wolson Deisgn
-    meta(name="description" content="")
+    title Process Work: Creating My Design links :: Andrew Wolson :: UX/UI Designer, Print Designer
+    meta(name="description" content="I created a website that displays link the I have found useful. This is how I created it.")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body 
@@ -16,15 +16,11 @@ html.no-js(lang="en")
     main.grid
       article.col-3-3
         .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="")
-          h5(itemprop="name") Process work: Share your inspiration, creating my design links.
-          p
-            span(itemprop="author" itemscope="" itemtype="http://schema.org/Person")
-              span(itemprop="name") Andrew Wolson
-              br
-              em
-                meta(itemprop="datePublished" content="2013-12-16") 
-                | December 16, 2013
+          h5
+            meta(itemprop="datePublished" content="2013-12-16") 
+            | December 16, 2013
         .col-1-2
+          h1 Process Work: Creating My Design links
           p Over the past week, I launched a 
             a(href="https://cottonbureau.com/products/the-bear-dont-care" title="The Bear don't care t-shirt on Cotton Bureau" target="_blank") new shirt
             |  on Cotton Bureau. They gave me 14 days to sell 25 shirts. I found out first hand that it is not easy to get shirts flying off the shelf. It takes a lot of work to get the word out. I read a good article on 
@@ -53,9 +49,6 @@ html.no-js(lang="en")
           p By adding the search feature users can get to all of the content on the site with one click. The only problem was that it was not intuitive. First time users did not know what to search for, let alone what the site was about. So I added a line of copy to the top of the page explaining what the site is about. This makes the question "What inspires you?" more understandable. I also kept the filter idea for people who don't know all the site has to offer. The filter allows the user to get to relevant content without directly using the search feature.
           p While the site is a work in progress, so far I have accomplished my main objectives. I look to expand the link list of the site and bring on contributors to diversify the link list.
           hr
-        ul.flat-list
-          li
-            p  
-              a.secondary-button(href="/thoughts") View all thoughts &#x2192;
+        include ../../components/cta/thoughts.jade
     include ../../components/footer/footer.jade
     include ../../components/script-calls/script-calls.jade
