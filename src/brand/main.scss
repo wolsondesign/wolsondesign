@@ -437,37 +437,52 @@ textarea {
     }
   }
 
-  #featured-project-1 {
-    background: url("/img/work/everbank/everbank-loan-officer-website-homepage-cover.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  #featured-project-1 { 
+    background: url("/img/work/everbank/everbank-homepage-cover-mobile.jpg") no-repeat center center; 
     float: left;
     width: 100%;
-    height: 700px;
+    height: 530px;
+
+    @media screen and (min-width: $break-medium-width) {
+      background: url("/img/work/everbank/everbank-loan-officer-website-homepage-cover.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+         -moz-background-size: cover;
+           -o-background-size: cover;
+              background-size: cover;
+      height: 700px;
+    }
   }
 
   #featured-project-2 {
-    background: url("/img/work/aiga-jacksonville/aiga-jacksonville-hompage-cover.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("/img/work/aiga-jacksonville/aiga-jacksonville-homepage-cover-mobile.jpg") no-repeat center center; 
     float: left;
     width: 100%;
-    height: 700px;
+    height: 570px;
+
+    @media screen and (min-width: $break-medium-width) {
+      background: url("/img/work/aiga-jacksonville/aiga-jacksonville-hompage-cover.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+         -moz-background-size: cover;
+           -o-background-size: cover;
+              background-size: cover;
+      height: 700px;
+    }
   }
 
   #featured-project-3 {
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/homepage-fontslate-desktop.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("/img/work/font-slate/font-slate-homepage-cover-mobile.jpg") no-repeat center center;
     float: left;
     width: 100%;
-    height: 700px;
+    height: 570px;
+
+    @media screen and (min-width: $break-medium-width) {
+      background: url("/img/work/font-slate/font-slate-homepage-cover.jpg") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+         -moz-background-size: cover;
+           -o-background-size: cover;
+              background-size: cover;
+      height: 700px;
+    }
   }
 
   .featured-project-text {

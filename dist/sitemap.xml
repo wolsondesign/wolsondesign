@@ -53,7 +53,12 @@
 </url>
 <url>
   <loc>http://wolsondesign.com/about/</loc>
-  <lastmod>2016-06-22T04:18:52+00:00</lastmod>
+  <lastmod>2016-06-30T04:18:52+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://wolsondesign.com/about/resume.html</loc>
+  <lastmod>2016-06-30T04:18:52+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
