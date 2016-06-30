@@ -501,13 +501,6 @@ textarea {
       color: $grey-mid;
     }
   }
-   
-  /* ABOUT */
-  .resume-block {
-    @media screen and (min-width: $break-large-width) {
-      margin-top: 20px;
-    }
-  }
 
   /* NAVIGATION */
   header#navigation {
@@ -524,7 +517,7 @@ textarea {
 
     li:hover {
       @media screen and (min-width: $break-medium-width) {
-        box-shadow: inset 0 5px $blue-dark;
+        box-shadow: inset 0 2px $blue-dark;
         background: none;
         transition: all 0.2s linear;
         color: $blue-dark;
@@ -534,14 +527,18 @@ textarea {
 
   li {
     &.active {
+      background: $orange;
+
       @media screen and (min-width: $break-medium-width) {
-        box-shadow: inset 0 5px $blue;
+        box-shadow: inset 0 2px $orange;
         background: none;
       }
-      background: $blue;
 
       a {
         color: $white;
+        @media screen and (min-width: $break-medium-width) {
+          color: $orange;
+        }
       }
     }
   }
@@ -600,7 +597,7 @@ textarea {
     h4 {
       color: $white;
       float: right;
-      margin: 15px 10px 0 0;
+      margin: 20px 10px 0 0;
     }
   }
   
@@ -693,13 +690,19 @@ textarea {
 
   /* BUTTON */
   .btn-white-bg {
-    border: 1px solid $black;
+    border: 1px solid $orange;
     color: $black;
+    &:hover {
+      color: $black;
+    }
   }
 
   .btn-black-bg {
-    border: 1px solid $white;
+    border: 1px solid $orange;
     color: $white;
+    &:hover {
+      color: $white;
+    }
   }
 
   .btn-white-bg, 
@@ -711,13 +714,12 @@ textarea {
     transition: all 0.5s ease;
     &:hover {
       border: 1px solid $orange;
-      color: $black;
       background: $orange;
     }
   }
 
   .cd-form input[type="submit"] {
-    border: 1px solid $black;
+    border: 1px solid $orange;
     color: $black;
     background: $white;
     display: inline-block;
@@ -826,20 +828,33 @@ textarea {
   }
    
   a {
-    color: $black;
-    display: inline;
-    position: relative;
-    background-image: linear-gradient(to bottom,$orange 0,$orange 100%);
-    background-position: 0 95%;
-    border-bottom: 0;
-    background-image: -webkit-linear-gradient(top,$orange 0,$orange 100%);
-    background-repeat: repeat-x;
-    background-size: 1px 1px;
     text-decoration: none;
-    text-shadow: 3px 0 $white,2px 0 $white,1px 0 $white,-1px 0 $white,-2px 0 $white,-3px 0 $white;
+    color: $black;
+    position: relative;
 
     &:hover {
       color: $blue-dark;
+    }
+  }
+
+  .body-link {
+    background-image: -webkit-linear-gradient(top,$orange 0,$orange 100%);
+    background-image: linear-gradient(to bottom,$orange 0,$orange 100%);
+    background-position: 0 95%;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    border-bottom: 0;
+    color: $black;
+    display: inline;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 3px 0 $white,2px 0 $white,1px 0 $white,-1px 0 $white,-2px 0 $white,-3px 0 $white;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $orange;
+      background-image: -webkit-linear-gradient(top,$black 0,$black 100%);
+      background-image: linear-gradient(to bottom,$black 0,$black 100%);
     }
   }
 
