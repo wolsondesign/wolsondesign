@@ -3,8 +3,8 @@ html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title know how: getting started with Sass - Wolson Design
-    meta(name="description" content="")
+    title Know How: Getting started with Sass :: Andrew Wolson :: UX/UI Designer, Print Designer
+    meta(name="description" content="I like to pass everything I learned onto others. This is what I have learned about the basics of SASS.")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body 
@@ -16,24 +16,18 @@ html.no-js(lang="en")
     main.grid
       article.col-3-3
         .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="")
-          h5(itemprop="name") Know how:
-            br 
-            | Getting started with Sass.
-          p
-            span(itemprop="author" itemscope="" itemtype="http://schema.org/Person")
-              span(itemprop="name") Andrew Wolson
-              br
-              em
-                meta(itemprop="datePublished" content="2014-01-02")
-                | January 2, 2014
+          h5
+            meta(itemprop="datePublished" content="2014-01-02")
+            | January 2, 2014
         .col-1-2
+          h1 Know How: Getting started with Sass
           p I have been interested in learning Sass for a long time, but I have had a problem finding quality information on Sass. What I could find was written for an advanced developer, not for someone just learning the language. My biggest worry was how much time and effort that would go into learning this language.
           p I received 
-            a(href="http://www.abookapart.com/products/sass-for-web-designers" title="Sass for Web Designers written by Dan Cederholm" target="_blank") Sass for web designers
-            |  for Christmas, and after reading the first chapter, all my worries dissipated. I came to find out that the CSS markup that you have come to love can be used with the Sass markup! That was great because it allowed me to transition into the language and convert my stylesheets as I learned the Sass.
+            a(href="http://www.abookapart.com/products/sass-for-web-designers" title="Sass for Web Designers written by Dan Cederholm" target="_blank") Sass for web designers 
+            |  book for Christmas, and after reading the first chapter, all my worries dissipated. I came to find out that the CSS markup that you have come to love can be used with the Sass markup! That was great because it allowed me to transition into the language and convert my stylesheets as I learned the Sass.
           p This book has helped me tremendously! Now I want to give back what I have learned. So below you will find how to set up Sass for your next web project.
           h2 Sass is not an attitude problem, it fixes problems         
-          p Sass acts like a shorthand for CSS. It is meant to simplify and streamline your code to make coding faster and easier to maintain. You code using the Sass vernacular then the Sass is processed to create the CSS for your document. You might be asking: “What is processing this code?” Sass uses a language called 
+          p Sass acts like a shorthand for CSS. It is meant to simplify and streamline your code to make coding faster and easier to maintain. You code using the Sass vernacular then the Sass is processed to create the CSS for your document. You might be asking: &ldquo;What is processing this code?&rdquo; Sass uses a language called 
             a(href="https://www.ruby-lang.org/" title="A programming language created by Yukihiro Matsumoto." target="_blank") Ruby
             |. Here is the first part of the setup:
           h2 1. Make sure Ruby is installed on your computer          
@@ -68,9 +62,6 @@ html.no-js(lang="en")
             a(href="http://codepen.io/wolsondesign/pen/dCxAn" title="This is a filter I created for a new site I am working on." target="_blank") pen
             |  that I created using Sass.
           hr
-          ul.flat-list
-            li
-              p  
-                a.secondary-button(href="/thoughts") View all thoughts &#x2192;
+          include ../../components/cta/thoughts.jade
     include ../../components/footer/footer.jade
     include ../../components/script-calls/script-calls.jade

@@ -3,7 +3,7 @@ html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title mehnimals: the bear don't care - Wolson Design
+    title Mehnimals: The bear don't care :: Andrew Wolson :: UX/UI Designer, Print Designer
     meta(name="description" content="")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
@@ -15,16 +15,12 @@ html.no-js(lang="en")
     include ../../components/masthead/masthead.jade
     main.grid
       article.col-3-3
-        .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="")
-          h5(itemprop="name") Mehnimals: the bear don't care
-          p
-            span(itemprop="author" itemscope="" itemtype="http://schema.org/Person")
-              span(itemprop="name") Andrew Wolson
-              br
-              em
-                meta(itemprop="datePublished" content="2013-11-18") 
-                | November 18, 2013
+        .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="This is my process for designing a t-shirt for Cotton Bureau.")
+          h5
+            meta(itemprop="datePublished" content="2013-11-18") 
+            | November 18, 2013
         .col-1-2
+          h1 Process Work: The bear don't care
           p Logos made by 
             a(href="http://www.brandiose.com/behind-the-scenes/mobile/10" title="Link to Braniose's porfolio" target="_blank") Brandios
             |  and a wall mural created by 
@@ -36,14 +32,20 @@ html.no-js(lang="en")
             |. It was strong enough to be noticed, yet generic enough to be soon forgotten.
           img(src="/img/thoughts/mehnimals-the-bear-dont-care-2.png" alt="The digitized version of my bear Mehnimal.")
           p I decided that the illustration would look great on a t-shirt. The designs dovetail perfectly with the other the designs for my t-shirt company Midnight Society Apparel. Below are the design options I created for the shirt.
-          h5 Option 1
+          h2 Option 1
           img(src="/img/thoughts/mehnimals-the-bear-dont-care-3.jpg" alt="The first t-shirt option I created.")
-          h5 Option 2
+          h2 Option 2
           img(src="/img/thoughts/mehnimals-the-bear-dont-care-4.jpg" alt="The second t-shirt option I created.")
-          h5 Option 3 - Front
+          h2 Option 3
+      section.col-3-3
+        .col-1-2
           img(src="/img/thoughts/mehnimals-the-bear-dont-care-5.jpg" alt="The front of the third t-shirt option I created.")
-          h5 Option 3 - Back
+        .col-1-2
           img(src="/img/thoughts/mehnimals-the-bear-dont-care-6.jpg" alt="The back of the third t-shirt option I created.")
+      section.col-3-3
+        .col-1-4
+          | &nbsp;
+        .col-1-2
           h2 Update
           p I chose an option and sent it to 
             a(href="https://cottonbureau.com/people/andrew-wolson" title="This goes to my profile on Cotton Bureau’s site." target="_blank") Cotton Bureau
@@ -51,9 +53,6 @@ html.no-js(lang="en")
           p 
             a(href="https://cottonbureau.com/products/the-bear-dont-care") Let’s make this shirt a reality!
           hr
-        ul.flat-list
-          li
-            p  
-              a.secondary-button(href="/thoughts") View all thoughts &#x2192;
+        include ../../components/cta/thoughts.jade
     include ../../components/footer/footer.jade
     include ../../components/script-calls/script-calls.jade

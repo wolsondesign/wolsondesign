@@ -3,8 +3,8 @@ html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title I'm Board 6: From paper to the board - Wolson Design
-    meta(name="description" content="")
+    title I'm Board 6: From paper to the board :: Andrew Wolson :: UX/UI Designer, Print Designer
+    meta(name="description" content="This is the story of how I produced my skateboard graphic for the I'm Board 6 art show.")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body 
@@ -16,15 +16,11 @@ html.no-js(lang="en")
     main.grid
       article.col-3-3
         .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="")
-          h5(itemprop="name") I'm Board 6: From paper to the board.
-          p
-            span(itemprop="author" itemscope="" itemtype="http://schema.org/Person")
-              span(itemprop="name") Andrew Wolson
-              br
-              em
-                meta(itemprop="datePublished" content="2016-03-27")
-                | March 27, 2016
+          h5
+            meta(itemprop="datePublished" content="2016-03-27")
+            | March 27, 2016
         .col-1-2
+          h1 I'm Board 6: From paper to the board
           p 
             strong Note:
             em This post is a continuation of a 
@@ -43,9 +39,6 @@ html.no-js(lang="en")
           p This project was a great exercise in time management. It was difficult for me to stay focused and complete the project. Because I want to work on so many things that there is not enough time in the world to complete everything. I learned that by giving myself a concrete deadline and breaking the project into bite size pieces. I was able to not only complete the project early. The results came out well making this a board that I will be happy to hang in my house.
           img(alt="The completed skateboard in all it's glory." src="/img/thoughts/im-board-6-production-05.jpg")
           hr
-        ul.flat-list
-          li
-            p  
-              a.secondary-button(href="/thoughts") View all thoughts &#x2192;
+        include ../../components/cta/thoughts.jade
     include ../../components/footer/footer.jade
     include ../../components/script-calls/script-calls.jade

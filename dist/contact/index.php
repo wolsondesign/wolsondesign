@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 if($_POST["submit"]) {
   $recipient="wolsondesign@gmail.com";
@@ -22,8 +22,8 @@ if($_POST["submit"]) {
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Need to reach Andrew Wolson? Look no further. - Wolson Design</title>
-    <meta name="description" content="">
+    <title>Contact :: Andrew Wolson :: UX/UI Designer, Print Designer</title>
+    <meta name="description" content="This page is the best way to get intouch with me. Considering my pager is in the shop and all.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
   </head>
@@ -83,21 +83,6 @@ if($_POST["submit"]) {
         </form>
       </article>
     </main>
-    <footer> 
-      <section class="social-links">
-        <article>
-          <ul class="flat-list">
-            <li><a href="https://dribbble.com/wolsondesign">Dribbble </a>&middot;</li>
-            <li> <a href="http://codepen.io/wolsondesign/">CodePen </a>&middot; </li>
-            <li> <a href="https://plus.google.com/u/0/+AndrewWolson?rel=author">g+ </a>&middot; </li>
-            <li> <a href="https://twitter.com/wolsondesign">Twitter</a></li>
-          </ul>
-        </article>
-      </section>
-      <section class="copyright">
-        <h5>&copy; 2016 Andrew Wolson</h5>
-      </section>
-    </footer>
     <link rel="stylesheet" href="../css/normalize.min.css">
     <link rel="stylesheet" href="../css/main.min.css">
     <script src="/js/vendor/modernizr-2.8.3.min.js"></script>

@@ -40,7 +40,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', function () {
   gulp.watch('./src/brand/**/*.scss', ['sass']);
-  gulp.watch('./src/canvas/**/*.jade', ['jade']);
+  gulp.watch('./src/**/*.jade', ['jade']);
 });
 
 gulp.task('default', ['jade','sass','watch','browser-sync']);
