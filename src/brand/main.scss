@@ -143,7 +143,7 @@ textarea {
      1. FORM
      2. FLOATING LABELS
      3. HOMEPAGE
-     4. ABOUT
+     4. WORK
      5. NAVIGATION
      6. MASTHEAD
      7. RESPONSIVE IMAGE CAPTION HOVER
@@ -517,26 +517,50 @@ textarea {
     }
   }
 
+  /* WORK */
+  .credit-box {
+
+    float: left;
+    padding: 15px;
+    text-align: center;
+
+    .col-1-3 {
+      margin-top: 20px;
+    }
+  }
+
   /* NAVIGATION */
+  .primary-navigation {
+    text-align: center;
+    font-size: 1.5em;
+    float: left;
+    width: 100%;
+  
+    .navigation-element {
+      margin: 30px 0;
+      
+      @media screen and (min-width: $break-medium-width) {
+        float: left;
+        width: 25%;
+      }
+    }
+  }
+
   header#navigation {
     bottom: 0;
   }
 
   #navigation {
-    border-top: thin solid $grey;
-    background: $white;
-    position: fixed;
     left: 0;
     right: 0;
     z-index: 100;
+    float: right;
+    width: 100%;
+    margin-top: -44px;
 
-    li:hover {
-      @media screen and (min-width: $break-medium-width) {
-        box-shadow: inset 0 2px $blue-dark;
-        background: none;
-        transition: all 0.2s linear;
-        color: $blue-dark;
-      }
+    @media screen and (min-width: $break-medium-width) {
+      width: 76%;
+      margin-top: 11px;
     }
   }
 
@@ -561,17 +585,9 @@ textarea {
   a.menu-link {
     float: right;
     display: block;
-    padding: 1em;
+    padding: 20px 0 0;
+    height: 43px;
   }
-
-   nav[role=navigation] {
-     clear: both;
-     -webkit-transition: all 0.3s ease-out;  
-        -moz-transition: all 0.3s ease-out;
-         -ms-transition: all 0.3s ease-out;
-          -o-transition: all 0.3s ease-out;
-             transition: all 0.3s ease-out;
-   }
 
    .js nav[role=navigation] {
      overflow: hidden;
@@ -579,8 +595,16 @@ textarea {
    }
 
   nav[role=navigation] {
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;  
+       -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+
     &.active {
       max-height: 17em;
+      margin: 69px 0 30px 0;
     }
     
     ul {
@@ -589,11 +613,27 @@ textarea {
     }
 
     li {
+      padding: 20px 0;
+      @media screen and (min-width: $break-medium-width) {
+        padding: 12px 0;
+      }
+
       a {
         display: block;
-        padding: 1em;
         text-align: center;
-        text-transform: uppercase;
+
+        .body-link {
+          @media screen and (min-width: $break-medium-width) {
+            color: $white;
+            text-shadow: 3px 0 $black,2px 0 $black,1px 0 $black,-1px 0 $black,-2px 0 $black,-3px 0 $black;
+            
+            &:hover {
+              color: $orange;
+              background-image: -webkit-linear-gradient(top,$white 0,$white 100%);
+              background-image: linear-gradient(to bottom,$white 0,$white 100%);
+            }
+          }
+        }
       }
     }
   } 
@@ -603,105 +643,28 @@ textarea {
     background: $black;
     height: 60px;
     margin-bottom: 90px;
+    padding: 0 15px;
 
-    img {
-      float: left;
-      margin: 10px 0 0 10px;
+    @media screen and (min-width: $break-medium-width) {
+      height: 80px;
     }
 
     h4 {
       color: $white;
-      float: right;
-      margin: 20px 10px 0 0;
+      padding: 20px 0 0;
+      float: left;
+      height: 44px;
+
+      @media screen and (min-width: $break-medium-width) {
+        padding: 28px 0 0;
+        height: 52px;
+      }
+
+      &:hover {
+        color: $orange;
+      }
     }
   }
-  
-   /* RESPONSIVE IMG SCROLL HOVER */
-    .website-display-head {
-      @media screen and (min-width: $break-medium-width) {
-        width: 500px;
-        height: 21px;
-      }
-
-      img {
-        margin-bottom: 0;
-      }
-    }
-
-   p + .website-display-head {
-     margin-top: 1.563em;
-   }
-
-    .website-display {
-      margin-bottom: 1.563em;
-      @media screen and (min-width: $break-medium-width) {
-        width: 500px;
-        height: 350px;
-        position: relative;
-        background: $white;
-        overflow: hidden;
-        float: left;
-        -webkit-box-shadow: 0px 10px 51px -6px rgba(0, 0, 0, 0.43);
-           -moz-box-shadow: 0px 10px 51px -6px rgba(0, 0, 0, 0.43);
-                box-shadow: 0px 10px 51px -6px rgba(0, 0, 0, 0.43);
-      }
-
-      img {
-        @media screen and (min-width: $break-medium-width) {
-          border-radius: 0 0 3px 3px;
-          position: absolute;
-          -webkit-transform: translateY(0);
-             -moz-transform: translateY(0);
-              -ms-transform: translateY(0);
-                  transform: translateY(0);
-          transition: 3s all ease;
-        }
-      }
-    }
-
-    .aigajacksonville {
-      img:hover {
-        @media screen and (min-width: $break-medium-width) {
-      -webkit-transform: translateY(-790px);
-         -moz-transform: translateY(-790px);
-          -ms-transform: translateY(-790px);
-              transform: translateY(-790px);
-        }
-      }
-    }
-
-    .fontslate {
-      img:hover {
-        @media screen and (min-width: $break-medium-width) {
-          -webkit-transform: translateY(-230px);
-             -moz-transform: translateY(-230px);
-              -ms-transform: translateY(-230px);
-                  transform: translateY(-230px);
-        }
-      }
-    }
-
-    .loprofile {
-      img:hover {
-        @media screen and (min-width: $break-medium-width) {
-      -webkit-transform: translateY(-670px);
-         -moz-transform: translateY(-670px);
-          -ms-transform: translateY(-670px);
-              transform: translateY(-670px);
-        }
-      }
-    }
-
-    .recruitprofile {
-      img:hover {
-        @media screen and (min-width: $break-medium-width) {
-          -webkit-transform: translateY(-450px);
-             -moz-transform: translateY(-450px);
-              -ms-transform: translateY(-450px);
-                  transform: translateY(-450px);
-        }
-      }
-    }
 
   /* BUTTON */
   .btn-white-bg {
@@ -866,12 +829,25 @@ textarea {
     text-shadow: 3px 0 $white,2px 0 $white,1px 0 $white,-1px 0 $white,-2px 0 $white,-3px 0 $white;
     transition: all 0.5s ease;
 
+    &.black-bg {
+      color: $white;
+      text-shadow: 3px 0 $black,2px 0 $black,1px 0 $black,-1px 0 $black,-2px 0 $black,-3px 0 $black;
+      
+      &:hover {
+        color: $orange;
+        background-image: -webkit-linear-gradient(top,$white 0,$white 100%);
+        background-image: linear-gradient(to bottom,$white 0,$white 100%);
+      }
+    }
+
     &:hover {
       color: $orange;
       background-image: -webkit-linear-gradient(top,$black 0,$black 100%);
       background-image: linear-gradient(to bottom,$black 0,$black 100%);
     }
   }
+
+
 
   ul {
     -webkit-margin-before: 0;
@@ -899,8 +875,8 @@ textarea {
   hr {
     border: 0;
     height: 0;
-    border-top: 1px solid rgba($black, 0.1);
-    border-bottom: 1px solid rgba($white, 0.5);
+    border-top: 1px solid rgba($orange, 0.5);
+    border-bottom: 1px solid rgba($white, 0.1);
   }
 
   .caption {
@@ -930,7 +906,6 @@ textarea {
     background: $white;
     float: left;
     width: 100%;
-    margin-bottom: 50px;
 
     .social-links {
       background: $grey-dark; 
@@ -938,7 +913,6 @@ textarea {
       float: left;
       width: 100%;
       padding: 15px;
-      margin-bottom: 15px;
 
       .icon-dribbble,
       .icon-github,
