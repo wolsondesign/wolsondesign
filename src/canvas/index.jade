@@ -11,49 +11,39 @@ html.no-js(lang="en")
     // [if lt IE 8] <!
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     section.homepage-intro
-      article.inside
-        .unitiger
-          h1 Andrew Wolson
-          img(align="center" src="/img/unitiger-badge-index.png" alt="A badge with the words print, web, dev at the top. A tiger with a unicorn horn is at the center of the badge and dominates the badge.")
-        .homepage-text
-          h2 A UX/UI Designer with a background in Print.
-        a(href="#featured-project-1")
-          .icon-scroll 
-    .chevron.chevron-intro
+      article
+        h2 Hello, my name is
+        h1 Andrew Wolson
+        h3 I am a UX/UI Designer with a background in Print.
+    section.homepage-work-feature-1
+      article.homepage-feature-text
+        h2 I have experience in Corporate design.
+        p.homepage-feature-summary I worked for a corporation called EverBank for nearly 5 years. I started as a Graphic Designer and moved into a role as a UX Designer. I learned how a brand runs and opperatates. I saw how a re-brand works and how a creative organization opperates.
+        ul.flat-list
+          li
+            p
+              a.btn-white-bg(href="/work/everbank-loan-officer-website.html") View Case Study
+    section.homepage-work-feature-2
+      article.homepage-feature-text
+        h2 I contribute to the Design Community.
+        p.homepage-feature-summary I am the AIGA Jacksonville web chair. I work with a telented team of designers. My role as web chair allows me to focus on the website.
+        ul.flat-list
+          li
+            p
+              a.btn-white-bg(href="/work/everbank-loan-officer-website.html") View Case Study
+    section.homepage-work-feature-3
+      article.homepage-feature-text
+        h2 I have experience creating small products.
+        p.homepage-feature-summary I created a website about font information. Because I saw a gap in font resources for designers.
+        ul.flat-list
+          li
+            p
+              a.btn-white-bg(href="/work/everbank-loan-officer-website.html") View Case Study
     
-    section#featured-project-1
-    .chevron.chevron-project-top
-    section.featured-project-text
-      article
+    a.cta-bar(href="/work/")
+      section
+        p View my selected projects
 
-        ul.flat-list
-          li
-            p  
-              a.btn-white-bg(href="/work/everbank-loan-officer-website.html") EverBank :: View project &#x2192;
-    .chevron.chevron-project-bottom
-
-    section#featured-project-2
-    .chevron.chevron-project-top
-    section.featured-project-text
-      article
-
-        ul.flat-list
-          li
-            p  
-              a.btn-white-bg(href="/work/aiga-jacksonville.html") AIGA Jacksonville :: View project &#x2192;
-    .chevron.chevron-project-bottom
-
-    section#featured-project-3
-    .chevron.chevron-project-top
-    section.featured-project-text
-      article
-
-        ul.flat-list
-          li
-            p  
-              a.btn-white-bg(href="/work/fontslate-website.html") FontSlate :: View project &#x2192;
-    include ../components/footer/footer.jade
-    include ../components/navigation/primary-navigation.jade
     include ../components/script-calls/script-calls.jade
     script.
       // smooth scrolling for anchor tags
