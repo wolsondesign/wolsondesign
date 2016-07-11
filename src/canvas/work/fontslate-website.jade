@@ -11,34 +11,40 @@ html.no-js(lang="en")
     // [if lt IE 8] <!
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     include ../../components/masthead/masthead.jade
-    main.grid
-      section.col-3-3
-        .col-1-4
-          &nbsp;
-        .col-1-2
+    main
+      .introduction
+        img(src="/img/work/font-slate/font-slate-homepage-cover.jpg")
+        .introduction-text
           h1 FontSlate
-          h5 Role: Founder, Creative Director
-            br
-            | Context: branding and site design
-          hr
+          h5 Founder, Creative Director
           p FontSlate started as a student project at SCAD. Our professor gave us an open project. We could design anything we wanted. These types of projects can be daunting. Because of how open they are. But I found a strong direction for the project by thinking of a problem I had at school. Professors would tell me I was using the wrong font for a project. But when I asked why it was the wrong font. I would not get a straight answer. 
           p It wasn't until I started looking up fonts and their history. I found fonts exist to for use in specific contexts. Fonts are designed for use in airports, signs, phone books, etc.. I created this website as a solution to those questions my professors could not answer.
-      section.col-3-3
-        .col-2-3
-          img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/fontslate-brand-guide.png")
-        .col-1-3
-          h2 Building the brand
-          p The name of the site came from trying to convey the purpose of the site in a short and concise manner. The site is about fonts and slate is a nod to education. The circle for the logo symbolizes a period. Representing us as the definitive source for font education. The gold stands for the quality of the information. The color palette is simple because I wanted the brand elements to stay in the background. So they won't overpower the primary content. Even the strongest color gold meant for limited use. I chose the font for the logo for its readability and the way the "o" and "l" locked into each other.
-        .col-1-3
-          h2 Website strategy
-          p The site has four basic categories that make it easy for the user to find the information they are looking for. The content strategy for the site revolves around highlighting basic information of content. As I add more information to the site. The basic information will take a back seat. So the expert information can shine.
-        .col-2-3
-          img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/fontslate-home-page-layout.jpg")
-      section.col-3-3
-        .col-1-4
-          &nbsp;
-        .col-1-2
-          hr
-      include ../../components/cta/work.jade
+      .grid
+        section.col-3-3
+          .col-1-4
+            &nbsp;
+          .col-1-2
+            h2 Building the brand
+            p The name of the site came from trying to convey the purpose of the site in a short and concise manner. The site is about fonts and slate is a nod to education. The circle for the logo symbolizes a period. Representing us as the definitive source for font education. The gold stands for the quality of the information. The color palette is simple because I wanted the brand elements to stay in the background. So they won't overpower the primary content. Even the strongest color gold meant for limited use. I chose the font for the logo for its readability and the way the "o" and "l" locked into each other.
+          .col-2-3
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/fontslate-brand-guide.png")
+          .col-1-3
+            h5 Brand guide
+        section.col-3-3
+          .col-1-4
+            &nbsp;
+          .col-1-2
+            h2 Website strategy
+            p The site has four basic categories that make it easy for the user to find the information they are looking for. The content strategy for the site revolves around highlighting basic information of content. As I add more information to the site. The basic information will take a back seat. So the expert information can shine.
+          .col-2-3
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/fontslate-home-page-layout.jpg")
+          .col-1-3
+            h5 FontSlate homepage
+        section.col-3-3
+          .col-1-4
+            &nbsp;
+          .col-1-2
+            hr
+        include ../../components/cta/work.jade
     include ../../components/footer/footer.jade  
     include ../../components/script-calls/script-calls.jade
