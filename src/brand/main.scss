@@ -174,20 +174,24 @@ textarea {
   fieldset {
     border: none;
   }
+
   .success {
+
     p {
       color: $white;
       background-color: $grey-dark;
       padding: 15px;
     }
   }
-   .cd-form::after {
+
+  .cd-form::after {
      clear: both;
      content: "";
      display: table;
-   }
+  }
 
-   .cd-form {
+  .cd-form {
+
     legend {
       margin: 20px 0;
       padding-bottom: 10px;
@@ -211,104 +215,114 @@ textarea {
     label {
       color: $white;
     }
+  } 
 
-   } 
+  .cd-form input,
+  .cd-form textarea,
+  .cd-form select {
+    color: $black;
+  }
 
-   .cd-form input,
-   .cd-form textarea,
-   .cd-form select {
-     color: $black;
-   }
+  .cd-form textarea,
+  .cd-form select ,
+  .cd-form label {
+    font-size: 1.6rem;
+  }
 
-   .cd-form textarea,
-   .cd-form select ,
-   .cd-form label {
-     font-size: 1.6rem;
-   }
+  input#cd-name,
+  input#cd-company,
+  input#cd-email,
+  textarea#cd-textarea {
+    font-size: 1em;
+  }
 
-   input#cd-name,
-   input#cd-company,
-   input#cd-email,
-   textarea#cd-textarea {
-     font-size: 1em;
+  .cd-form input[type="text"],
+  .cd-form input[type="email"],
+  .cd-form textarea,
+  .cd-form select,
+  .cd-form legend {
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+      -moz-appearance: none;
+       -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
    }
-   .cd-form input[type="text"],
-   .cd-form input[type="email"],
-   .cd-form textarea,
-   .cd-form select,
-   .cd-form legend {
-     display: block;
-     width: 100%;
-     -webkit-appearance: none;
-        -moz-appearance: none;
-         -ms-appearance: none;
-          -o-appearance: none;
-             appearance: none;
-   }
-   .cd-form input[type="text"],
-   .cd-form input[type="email"],
-   .cd-form textarea,
-   .cd-form select {
-     background-color: $white;
-     border-radius: .25em;
-     border: 1px solid $black;
-     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
-     padding: 12px;
-   }
-   .cd-form input[type="text"]:focus,
-   .cd-form input[type="email"]:focus,
-   .cd-form textarea:focus,
-   .cd-form select:focus {
-     border-color: #2c97de;
-     box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
-     outline: none;
-   }
-   .cd-form .cd-select {
-     position: relative;
-   }
-   .cd-form .cd-select::after {
-     /* arrow icon for select element */
-     content: '';
-     display: block;
-     height: 16px;
-     margin-top: -8px;
-     pointer-events: none;
-     position: absolute;
-     right: 16px;
-     top: 50%;
-     width: 16px;
-     z-index: 1;
-   }
-   .cd-form select {
-     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-     cursor: pointer;
-   }
-   .cd-form select::-ms-expand {
-     display: none;
-   }
-   .cd-form .cd-form-list {
-     margin-top: 16px;
-   }
-   .cd-form .cd-form-list::after {
-     clear: both;
-     content: "";
-     display: table;
-   }
-   .cd-form textarea {
-     min-height: 150px;
-     resize: vertical;
-     overflow: auto;
-   }
-   .cd-form .error-message p {
-     -moz-osx-font-smoothing: grayscale;
+   
+  .cd-form input[type="text"],
+  .cd-form input[type="email"],
+  .cd-form textarea,
+  .cd-form select {
+    background-color: $white;
+    border-radius: .25em;
+    border: 1px solid $black;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+    padding: 12px;
+  }
+
+  .cd-form input[type="text"]:focus,
+  .cd-form input[type="email"]:focus,
+  .cd-form textarea:focus,
+  .cd-form select:focus {
+    border-color: #2c97de;
+    box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+    outline: none;
+  }
+
+  .cd-form .cd-select {
+    position: relative;
+  }
+
+  .cd-form .cd-select::after {
+    /* arrow icon for select element */
+    content: '';
+    display: block;
+    height: 16px;
+    margin-top: -8px;
+    pointer-events: none;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    width: 16px;
+    z-index: 1;
+  }
+
+  .cd-form select {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+
+  .cd-form select::-ms-expand {
+    display: none;
+  }
+   
+  .cd-form .cd-form-list {
+    margin-top: 16px;
+  }
+  
+  .cd-form .cd-form-list::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .cd-form textarea {
+    min-height: 150px;
+    resize: vertical;
+    overflow: auto;
+  }
+  
+  .cd-form .error-message p {
+    -moz-osx-font-smoothing: grayscale;
      -webkit-font-smoothing: antialiased;
-     background: $red;
-     border-radius: .25em;
-     color: $white;
-     font-size: 1.4rem;
-     padding: 16px;
-     text-align: center;
-   }
+    background: $red;
+    border-radius: .25em;
+    color: $white;
+    font-size: 1.4rem;
+    padding: 16px;
+    text-align: center;
+  }
 
   .cd-form .error {
     border-color: $red !important;
@@ -403,55 +417,96 @@ textarea {
   .homepage-work-feature-1, .homepage-work-feature-2, .homepage-work-feature-3 {
     padding: 20px;
 
-    @media screen and (min-width: $break-large-width) {
+    @media screen and (min-width: $break-small-width) {
+      padding: 50px 20px;
+    }
+
+    @media screen and (min-width: $break-medium-width) {
       padding: 0;
+      border: 1px solid $orange;
     }
   }
 
   .homepage-work-feature-1 {
-    background: url('/img/work/everbank/everbank-homepage-cover-mobile.jpg') no-repeat center center;
+    background: url('/img/work/everbank/everbank-homepage-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      width: 100%;
+      float: left;
+      min-height: 800px;
+      
+    }
+
+    @media screen and (min-width: $break-large-width) {
+      background: url('/img/work/everbank/everbank-homepage-cover-large.jpg') no-repeat center center;
+      width: 50%;
+      min-height: 1080px;
+      border-right: none;
+      border-bottom: none;
+    }
 
     .homepage-feature-text {
+      @media screen and (min-width: $break-medium-width) {
+        min-height: 800px;
+
+        &:hover {
+          max-height: 800px;
+
+          a {
+            min-height: 800px;
+            margin: 0;
+            min-width: 1017px;
+            font-size: 1.5em;
+            padding: 50px;
+            color: $white;
+
+          }
+        }
+      }
+
       @media screen and (min-width: $break-large-width) {
         min-height: 1080px;
-
+        
         &:hover {
           max-height: 1080px;
 
           a {
+            min-width: 960px;
             min-height: 1080px;
-            margin: 0;
-            min-width: 959px;
-            font-size: 1.5em;
-            padding: 50px;
-            color: $white;
-
           }
         }
       }
-    }
-
-    @media screen and (min-width: $break-large-width) {
-      background: url('/img/work/everbank/everbank-loan-officer-website-homepage-cover.jpg') no-repeat center center;
-      width: 50%;
-      float: left;
-      min-height: 1080px;
-      border-right: 1px solid $orange;
     }
   }
 
   .homepage-work-feature-2 {
-    background: url('/img/work/aiga-jacksonville/aiga-jacksonville-homepage-cover-mobile.jpg') no-repeat center center;
+    background: url('/img/work/aiga-jacksonville/aiga-jacksonville-homepage-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      background: url('/img/work/aiga-jacksonville/aiga-jacksonville-homepage-cover-large.jpg') no-repeat center center;
+      width: 50%;
+      float: left;
+      min-height: 541px;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+    }
+
+    @media screen and (min-width: $break-large-width) {
+      border-top: 1px solid $orange;
+       border-bottom: 1px solid $orange;
+      border-right: 1px solid $orange;
+    }
 
     .homepage-feature-text {
-      @media screen and (min-width: $break-large-width) {
-        min-height: 540px;
+      @media screen and (min-width: $break-medium-width) {
+        min-height: 541px;
 
         &:hover {
-          max-height: 540px;
+          max-height: 541px;
 
           a {
-            min-height: 540px;
+            min-height: 541px;
             margin: 0;
             min-width: 960px;
             font-size: 1.5em;
@@ -460,29 +515,35 @@ textarea {
           }
         }
       }
-    }
-
-    @media screen and (min-width: $break-large-width) {
-      background: url('/img/work/aiga-jacksonville/aiga-jacksonville-homepage-cover.jpg') no-repeat center center;
-      width: 50%;
-      float: left;
-      min-height: 540px;
-      border-bottom: 1px solid $orange;
     }
   }
 
   .homepage-work-feature-3 {
-    background: url('/img/work/font-slate/font-slate-homepage-cover-mobile.jpg') no-repeat center center;
+    background: url('/img/work/font-slate/font-slate-homepage-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      background: url('/img/work/font-slate/font-slate-homepage-cover-large.jpg') no-repeat center center;
+      width: 50%;
+      float: right;
+      min-height: 539px;
+      border-top: none;
+      border-bottom: none;
+    }
+
+    @media screen and (min-width: $break-large-width) {
+      min-height: 538px;
+    }
 
     .homepage-feature-text {
-      @media screen and (min-width: $break-large-width) {
-        min-height: 540px;
+
+      @media screen and (min-width: $break-medium-width) {
+        min-height: 541px;
 
         &:hover {
-          max-height: 540px;
+          max-height: 541px;
 
           a {
-            min-height: 540px;
+            min-height: 541px;
             margin: 0;
             min-width: 960px;
             font-size: 1.5em;
@@ -491,13 +552,18 @@ textarea {
           }
         }
       }
-    }
 
-    @media screen and (min-width: $break-large-width) {
-      background: url('/img/work/font-slate/font-slate-homepage-cover.jpg') no-repeat center center;
-      width: 50%;
-      float: right;
-      min-height: 540px;
+      @media screen and (min-width: $break-large-width) {
+        min-height: 538px;
+
+        &:hover {
+          max-height: 538px;
+
+          a {
+            min-height: 538px;
+          }
+        }
+      }
     }
   }
 
@@ -509,7 +575,7 @@ textarea {
     margin: 0 auto;
 
     
-    @media screen and (min-width: $break-large-width) {
+    @media screen and (min-width: $break-medium-width) {
       background: none;
       opacity: 1;
       max-width: none;
@@ -543,14 +609,14 @@ textarea {
     }
 
     h2 {
-      @media screen and (min-width: $break-large-width) {
+      @media screen and (min-width: $break-medium-width) {
         font-size: 2em;
         color: $white;
       }
     }
     
     p {
-      @media screen and (min-width: $break-large-width) {
+      @media screen and (min-width: $break-medium-width) {
         font-size: 1.2em;
         max-width: 600px;
         color: $white;
@@ -559,7 +625,7 @@ textarea {
 
     .flat-list {
       
-      @media screen and (min-width: $break-large-width) {
+      @media screen and (min-width: $break-medium-width) {
         display: none; 
       }
 
@@ -569,25 +635,373 @@ textarea {
     }
   }
 
+  /*HOMEPAGE ABOUT SECTION */
+  .skill-tree {
+    padding: 20px;
+    float: left;
+    width: 100%;
+
+    @media screen and (min-width: $break-large-width) {
+      width: 50%;
+      padding: 50px;
+    }
+    
+    .skill {
+      width: 100%;
+      
+      @media screen and (min-width: $break-medium-width) {
+        float: right;
+        margin: 20px 0;
+      }
+
+      @media screen and (min-width: $break-large-width) {
+        margin: 0;
+      }
+      
+      @media screen and (min-width: $break-xlarge-width) {
+        margin: 20px 0;
+      }
+
+      h5 {
+        width: 100%;
+        margin-bottom: 0;
+        
+        @media screen and (min-width: $break-medium-width) {
+          width: 20%;
+          float: left;
+          margin: 0;
+        }
+
+        @media screen and (min-width: $break-large-width) {
+          width: 100%;
+        }
+
+        @media screen and (min-width: $break-xlarge-width) {
+          width: 20%;
+        }
+      }
+      
+      .skill-bar {
+        
+        @media screen and (min-width: $break-medium-width) {
+          width: 80%;
+          float: left;
+        }
+
+        @media screen and (min-width: $break-large-width) {
+          width: 100%;
+        }
+
+        @media screen and (min-width: $break-xlarge-width) {
+          width: 80%;
+        }
+        
+        .ux-design, 
+        .ui-design, 
+        .html, 
+        .css, 
+        .javascript, 
+        .design-thinking, 
+        .rapport-building {
+        background: black;
+        min-height: 25px;
+        margin-bottom: 20px;
+        }
+        
+        .ux-design {
+          width: 97%;
+        }
+      
+        .ui-design {
+          width: 93%;
+        }
+      
+        .html {
+          width: 95%;
+        }
+      
+        .css{
+          width: 95%;
+        }
+      
+        .javascript {
+          width: 60%;
+        }
+      
+        .design-thinking {
+          width: 99%;
+        }
+      
+        .rapport-building {
+          width: 97%;
+        }
+      }
+    }
+  }
+
+  .homepage-about-callout {
+    background: $black;
+    width: 100%;
+    padding: 20px;
+    float: left;
+
+    @media screen and (min-width: $break-large-width) {
+      width: 50%;
+      min-height: 608px;
+      padding: 50px;
+    }
+
+    @media screen and (min-width: $break-xlarge-width) {
+      min-height: 741px;
+    }
+
+    h2, p {
+      color: $white;
+
+      @media screen and (min-width: $break-large-width) {
+        margin: 0;
+      }
+    }
+    
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      max-width: 450px;
+    }
+  }
+ 
+  /*HOMEPAGE THOUGHT SECTION */
+  .homepage-article-1, .homepage-article-2, .homepage-article-3 {
+    float: left;
+    width: 100%;
+    padding: 20px;
+
+    @media screen and (min-width: $break-small-width) {
+      padding: 50px 20px;
+    }
+
+    @media screen and (min-width: $break-medium-width) {
+      width: 33.33%;
+      padding: 0;
+    }
+
+    .homepage-feature-text {
+      @media screen and (min-width: $break-medium-width) {
+        min-height: 424px;
+        padding: 20px;
+
+        &:hover {
+          max-height: 424px;
+          padding: 0;
+          min-width: 640px;
+
+          @media screen and (min-width: $break-medium-width) {
+            min-width: 287px;
+          }
+
+          a {
+            min-height: 424px;
+            margin: 0;
+            font-size: 1.5em;
+            padding: 50px;
+            color: $white;
+            min-width: 640px;
+          }
+        }
+      }
+
+      @media screen and (min-width: $break-large-width) {
+        padding: 50px;
+      }
+    }
+  }
+
+  .homepage-article-1 {
+    background: url('/img/thoughts/im-board-6-homepage-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      border-left: 1px solid $orange;
+    }
+  }
+
+  .homepage-article-2 {
+    background: url('/img/thoughts/know-how-thoughts-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      border-left: 1px solid $orange;
+    }
+  }
+
+  .homepage-article-3 {
+    background: url('/img/thoughts/inspiration-bank-thoughts-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      border-left: 1px solid $orange;
+      border-right: 1px solid $orange;
+    }
+  }
+
+  /*HOMEPAGE CONTACT SECTION */
+  .homepage-contact-callout {
+    padding: 20px;
+    background: $black;
+    float: left;
+    width: 100%;
+
+    @media screen and (min-width: $break-medium-width) {
+      width: 50%;
+      min-height: 511px;
+      padding: 50px;
+    }
+
+    @media screen and (min-width: $break-large-width) {
+      min-height: 527px;
+    }
+
+    @media screen and (min-width: $break-xlarge-width) {
+      min-height: 252px;
+    }
+
+    h2 {
+      color: $white;
+    }
+
+    p {
+
+      @media screen and (min-width: $break-xlarge-width) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .homepage-social-lockup {
+    float: left;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (min-width: $break-medium-width) {
+      width: 50%;
+    }
+
+    .twitter, .linkedin, .dribbble, .github {
+      padding: 80px 0;
+      
+
+      &:hover {
+        background: $orange;
+        transition: all 0.5s ease;
+      }
+
+      @media screen and (min-width: $break-medium-width) {
+        padding: 109px 0;
+      }
+
+      @media screen and (min-width: $break-large-width) {
+        padding: 113px 0;
+      }
+
+      @media screen and (min-width: $break-xlarge-width) {
+        width: 25%;
+        padding: 107px 0;
+      }
+    }
+
+    .twitter {
+      background: $twitter;
+      border-left: 1px solid $orange;
+      border-right: 1px solid $orange;
+      border-bottom: 1px solid $orange;
+
+      @media screen and (min-width: $break-xlarge-width) {
+        border: 1px solid $orange;
+      }
+    }
+
+    .linkedin {
+      background: $linkedin;
+      border-top: 1px solid $orange;
+      border-left: 1px solid $orange;
+      border-bottom: 1px solid $orange;
+
+      @media screen and (min-width: $break-xlarge-width) {
+        border: 1px solid $orange;
+      }
+    }
+
+    .dribbble {
+      background: $dribbble;
+      border: 1px solid $orange;
+
+      @media screen and (min-width: $break-xlarge-width) {
+        border-left: none;
+        border-right: none;
+
+      }
+    }
+
+    .github {
+      background: $black;
+      border-left: 1px solid $orange;
+      border-bottom: 1px solid $orange;
+
+      @media screen and (min-width: $break-xlarge-width) {
+        border-top: 1px solid $orange;
+        border-bottom: 1px solid $orange;
+      }
+
+      h5 {
+        color: $white;
+      }
+    }
+
+    a {
+      width: 50%;
+      float: left;
+      min-height: 200px;
+
+      @media screen and (min-width: $break-medium-width) {
+        min-height: 100px;
+      }
+    }
+  }
+
+  /* HOMEPAGE FOOTER */
+  .homepage-footer {
+    width: 100%;
+    float: left;
+    padding: 20px;
+
+    @media screen and (min-width: $break-medium-width) {
+      padding: 50px;
+      text-align: center;
+    }
+  }
+
   .cta-bar {
-    background: $orange;
+    background: none;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
     float: left;
+    max-height: 81px;
+    border: 1px solid $orange;
 
     @media screen and (min-width: $break-large-width) {
       max-height: 88px;
     }
 
     p {
-      color: $white;
+      color: $black;
       font-size: 1.125em;
       padding: 30px 0;
 
       &:hover {
         transition: all 0.5s ease;
         color: $black;
+        background: $orange;
+
       }
 
       @media screen and (min-width: $break-large-width) {
@@ -1103,9 +1517,6 @@ textarea {
   }
 
   footer {
-    background: $white;
-    float: left;
-    width: 100%;
 
     .social-links {
       background: $grey-dark; 
