@@ -414,7 +414,7 @@ textarea {
     }
   }
 
-  .homepage-work-feature-1, .homepage-work-feature-2, .homepage-work-feature-3 {
+  .work-feature-1, .work-feature-2, .work-feature-3, .work-feature-4 {
     padding: 20px;
 
     @media screen and (min-width: $break-small-width) {
@@ -427,7 +427,7 @@ textarea {
     }
   }
 
-  .homepage-work-feature-1 {
+  .work-feature-1 {
     background: url('/img/work/everbank/everbank-homepage-cover-small.jpg') no-repeat center center;
 
     @media screen and (min-width: $break-medium-width) {
@@ -445,7 +445,12 @@ textarea {
       border-bottom: none;
     }
 
-    .homepage-feature-text {
+    @media screen and (min-width: $break-xlarge-width) {
+      background: url('/img/work/everbank/everbank-homepage-cover-xlarge.jpg') no-repeat center center;
+      width: 65%;
+    }
+
+    .feature-text {
       @media screen and (min-width: $break-medium-width) {
         min-height: 800px;
 
@@ -459,7 +464,6 @@ textarea {
             font-size: 1.5em;
             padding: 50px;
             color: $white;
-
           }
         }
       }
@@ -476,10 +480,18 @@ textarea {
           }
         }
       }
+
+      @media screen and (min-width: $break-xlarge-width) {
+        &:hover {
+          a {
+           min-width: 1439px;
+          }
+        }
+      }
     }
   }
 
-  .homepage-work-feature-2 {
+  .work-feature-2 {
     background: url('/img/work/aiga-jacksonville/aiga-jacksonville-homepage-cover-small.jpg') no-repeat center center;
 
     @media screen and (min-width: $break-medium-width) {
@@ -498,7 +510,11 @@ textarea {
       border-right: 1px solid $orange;
     }
 
-    .homepage-feature-text {
+    @media screen and (min-width: $break-xlarge-width) {
+      width: 35%;
+    }
+
+    .feature-text {
       @media screen and (min-width: $break-medium-width) {
         min-height: 541px;
 
@@ -518,7 +534,7 @@ textarea {
     }
   }
 
-  .homepage-work-feature-3 {
+  .work-feature-3 {
     background: url('/img/work/font-slate/font-slate-homepage-cover-small.jpg') no-repeat center center;
 
     @media screen and (min-width: $break-medium-width) {
@@ -534,7 +550,11 @@ textarea {
       min-height: 538px;
     }
 
-    .homepage-feature-text {
+    @media screen and (min-width: $break-xlarge-width) {
+      width: 35%;
+    }
+
+    .feature-text {
 
       @media screen and (min-width: $break-medium-width) {
         min-height: 541px;
@@ -567,7 +587,163 @@ textarea {
     }
   }
 
-  .homepage-feature-text {
+  .work-feature-4 {
+    background: url('/img/work/discover-design-2016/discover-design-2016-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      background: url('/img/work/discover-design-2016/discover-design-2016-cover-large.jpg') no-repeat center center;
+      width: 50%;
+      float: left;
+      min-height: 541px;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+    }
+
+    @media screen and (min-width: $break-large-width) {
+      border-top: 1px solid $orange;
+       border-bottom: 1px solid $orange;
+      border-right: 1px solid $orange;
+    }
+
+    .feature-text {
+      @media screen and (min-width: $break-medium-width) {
+        min-height: 541px;
+
+        &:hover {
+          max-height: 541px;
+
+          a {
+            min-height: 541px;
+            margin: 0;
+            min-width: 960px;
+            font-size: 1.5em;
+            padding: 50px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .work-feature-5 {
+    background: url('/img/work/wedding-collateral/wedding-collateral-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      background: url('/img/work/wedding-collateral/wedding-collateral-cover-large.jpg') no-repeat center center;
+      width: 50%;
+      float: left;
+      min-height: 541px;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+    }
+
+    @media screen and (min-width: $break-large-width) {
+      border-top: 1px solid $orange;
+       border-bottom: 1px solid $orange;
+      border-right: 1px solid $orange;
+    }
+
+    .feature-text {
+      @media screen and (min-width: $break-medium-width) {
+        min-height: 541px;
+
+        &:hover {
+          max-height: 541px;
+
+          a {
+            min-height: 541px;
+            margin: 0;
+            min-width: 960px;
+            font-size: 1.5em;
+            padding: 50px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .work-feature-6 {
+    background: url('/img/work/bru-hast/bru-hast-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      background: url('/img/work/bru-hast/bru-hast-cover-large.jpg') no-repeat center center;
+      width: 50%;
+      float: left;
+      min-height: 541px;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+    }
+
+    @media screen and (min-width: $break-large-width) {
+      border-top: 1px solid $orange;
+       border-bottom: 1px solid $orange;
+      border-right: 1px solid $orange;
+    }
+
+    .feature-text {
+      @media screen and (min-width: $break-medium-width) {
+        min-height: 541px;
+
+        &:hover {
+          max-height: 541px;
+
+          a {
+            min-height: 541px;
+            margin: 0;
+            min-width: 960px;
+            font-size: 1.5em;
+            padding: 50px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .work-feature-7 {
+    background: url('/img/work/raisin-hell/raisin-hell-cover-small.jpg') no-repeat center center;
+
+    @media screen and (min-width: $break-medium-width) {
+      background: url('/img/work/raisin-hell/raisin-hell-cover-large.jpg') no-repeat center center;
+      width: 50%;
+      float: left;
+      min-height: 541px;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+    }
+
+    @media screen and (min-width: $break-large-width) {
+      border-top: 1px solid $orange;
+       border-bottom: 1px solid $orange;
+      border-right: 1px solid $orange;
+    }
+
+    .feature-text {
+      @media screen and (min-width: $break-medium-width) {
+        min-height: 541px;
+
+        &:hover {
+          max-height: 541px;
+
+          a {
+            min-height: 541px;
+            margin: 0;
+            min-width: 960px;
+            font-size: 1.5em;
+            padding: 50px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .feature-text {
     background: $white;
     opacity: 0.9;
     padding: 20px;
@@ -595,7 +771,7 @@ textarea {
           opacity: 1;
         }
         
-        .homepage-feature-summary {
+        .feature-summary {
           display: none;
         }
 
@@ -787,7 +963,7 @@ textarea {
       padding: 0;
     }
 
-    .homepage-feature-text {
+    .feature-text {
       @media screen and (min-width: $break-medium-width) {
         min-height: 424px;
         padding: 20px;
@@ -1039,6 +1215,7 @@ textarea {
   /* INTERNAL PAGES */
   .introduction {
     background: $grey-light;
+
     @media screen and (min-width: $break-large-width) {
       background: $grey-dark;
       float: left;
@@ -1053,6 +1230,7 @@ textarea {
     }
 
     @media screen and (min-width: $break-xlarge-width) {
+
       img {
         width: 70%;
       }
@@ -1094,8 +1272,136 @@ textarea {
         text-align: left;
 
         @media screen and (min-width: $break-large-width) {
-          font-size: .9em;
+          font-size: 1.4em;
         }
+      }
+    }
+  }
+
+  /* EVERBANK WORK */
+  .lo-types {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    
+    p {
+      border: 2px solid #000;
+      padding: 15px;
+      text-align: center;
+
+      @media screen and (min-width: $break-medium-width) {
+        width: 17%;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 15px;
+      }
+
+      @media screen and (min-width: $break-large-width) {
+        width: 18%;
+      }
+    }
+
+    p:nth-child(6) {
+      @media screen and (min-width: $break-medium-width) {
+        margin-right: 0px;
+      }
+    }
+
+    h5 {
+      width: 100%;
+      float: left;
+    }
+  }
+
+  /* SITEMAP */
+  .callout {
+    background: $grey-dark;
+    width: 100%;
+    padding: 20px;
+    
+    @media screen and (min-width: $break-medium-width) {
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      color: $white;
+      margin-bottom: 0;
+    }
+  }
+
+  .sitemap {
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    
+    @media screen and (min-width: $break-small-width) {
+      padding: 50px 50px 0 50px;
+    }
+
+    li {
+      width: 100%;
+
+      @media screen and (min-width: $break-small-width) {
+        width: auto;
+      }
+
+      a {
+        width: 100%;
+
+        @media screen and (min-width: $break-small-width) {
+          width: auto;
+        }
+      }
+    }
+
+    .homepage {
+
+      @media screen and (min-width: $break-small-width) {
+        float: right;
+        width: 100%;
+      }
+    }
+
+    .thoughts {
+
+      a {
+        margin: 0;
+        border-bottom: none;
+
+        @media screen and (min-width: $break-small-width) {
+          border-bottom: 1px solid $orange;
+        }
+      }
+    }
+
+    .work {
+
+      a {
+        margin: 0;
+        border-bottom: none;
+
+        @media screen and (min-width: $break-small-width) {
+          border-bottom: 1px solid $orange;
+        }
+      }
+    }
+
+    .about {
+
+      a {
+        margin: 0;
+        border-bottom: none;
+
+        @media screen and (min-width: $break-small-width) {
+          border-bottom: 1px solid $orange;
+        }
+      }
+    }
+
+    .contact {
+
+      a {
+        margin: 0;
       }
     }
   }
@@ -1194,7 +1500,7 @@ textarea {
             transition: all 0.3s ease-out;
 
     &.active {
-      max-height: 17em;
+      max-height: 21em;
       margin: 69px 0 30px 0;
     }
     
@@ -1227,7 +1533,7 @@ textarea {
 
         @media screen and (min-width: $break-medium-width) {
           border: 0;
-          font-size: .7em;
+          font-size: .6em;
         }
 
         .body-link {
@@ -1244,7 +1550,7 @@ textarea {
         }
       }
     }
-  } 
+  }
 
   /* MASTHEAD */
   #masthead {
@@ -1468,7 +1774,7 @@ textarea {
   }
    
   p, ul {
-    font-size: 1.125em;
+    font-size: 1.5em;
     line-height: 1.167em;
     -webkit-padding-start: 0;
     font-family: $delm-regular;

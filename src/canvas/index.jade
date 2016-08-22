@@ -4,7 +4,7 @@ html.no-js(lang="en")
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     title Andrew Wolson :: UX/UI Designer, Print Designer
-    meta(name="description" content="I am a UX/UI designer who know has experience working on everything from landing pages to online apps.")
+    meta(name="description" content="I am a UX/UI designer who has experience working on everything from landing pages to online apps.")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body
@@ -15,26 +15,26 @@ html.no-js(lang="en")
         h2 Hello, my name is
         h1 Andrew Wolson
         h3 I am a UX/UI Designer with a background in Print.
-    section.homepage-work-feature-1
-      article.homepage-feature-text
+    section.work-feature-1
+      article.feature-text
         h2 I have experience in Corporate design.
-        p.homepage-feature-summary I worked for a corporation called EverBank for nearly 5 years. I started as a Graphic Designer and moved into a role as a UX Designer. I learned how a brand runs and opperatates. I saw how a re-brand works and how a creative organization opperates.
+        p.feature-summary I worked for a corporation called EverBank for nearly 5 years. I started as a Graphic Designer and moved into a role as a UX Designer. I learned how a brand runs and operates. I saw how a re-brand works and how a creative organization opperates.
         ul.flat-list
           li
             p
               a.btn-white-bg(href="/work/everbank-loan-officer-website.html") View Case Study
-    section.homepage-work-feature-2
-      article.homepage-feature-text
+    section.work-feature-2
+      article.feature-text
         h2 I contribute to the Design Community.
-        p.homepage-feature-summary I am the AIGA Jacksonville web chair. I work with a telented team of designers. My role as web chair allows me to focus on the website.
+        p.feature-summary I am the AIGA Jacksonville web chair. I work with a telented team of designers. My role as web chair allows me to focus on the website.
         ul.flat-list
           li
             p
               a.btn-white-bg(href="/work/aiga-jacksonville.html") View Case Study
-    section.homepage-work-feature-3
-      article.homepage-feature-text
+    section.work-feature-3
+      article.feature-text
         h2 I have experience creating small products.
-        p.homepage-feature-summary I created a website about font information. Because I saw a gap in font resources for designers.
+        p.feature-summary I created a website about font information. Because I saw a gap in font resources for designers.
         ul.flat-list
           li
             p
@@ -91,27 +91,27 @@ html.no-js(lang="en")
         p LEARN MORE ABOUT ME
 
     section.homepage-article-1
-      article.homepage-feature-text
+      article.feature-text
         h2 Process work
-        p.homepage-feature-summary I share my personal projects and how I created them.
+        p.feature-summary I share my personal projects and how I created them.
         ul.flat-list
           li
             p
               a.btn-white-bg(href="/thoughts/im-board-6-from-paper-to-the-board.html") View Article
 
     section.homepage-article-2
-      article.homepage-feature-text
+      article.feature-text
         h2 Know how
-        p.homepage-feature-summary I believe in taking everything I learn and giving it back to others.
+        p.feature-summary I believe in taking everything I learn and giving it back to others.
         ul.flat-list
           li
             p
               a.btn-white-bg(href="/thoughts/getting-started-with-sass.html") View Article
  
     section.homepage-article-3
-      article.homepage-feature-text
+      article.feature-text
         h2 Inspiration Bank
-        p.homepage-feature-summary Inspiration is the feul I run on. This is some of what drives me.
+        p.feature-summary Inspiration is the feul I run on. This is some of what drives me.
         ul.flat-list
           li
             p
@@ -121,29 +121,9 @@ html.no-js(lang="en")
       section
         p VIEW MORE OF MY THOUGHTS
 
-    section.homepage-contact-callout
-      h2 Want to work together, say hi, or talk about tigers?
-      ul.flat-list
-        li
-          p
-            a.btn-black-bg(href="/contact/") Let's talk
+    include ../components/cta/contact-social-media.jade
 
-    section.homepage-social-lockup
-      a.linkedin(href="https://www.linkedin.com/in/andrew-wolson-90950026") 
-        h5 Linkedin
-      a.dribbble(href="https://dribbble.com/wolsondesign") 
-        h5 Dribbble
-      a.github(href="https://github.com/wolsondesign") 
-        h5 Github
-      a.twitter(href="https://twitter.com/wolsondesign") 
-        h5 Twitter
-
-    footer
-      section.homepage-footer
-        h4 Congratulations you made it to the bottom of the page!
-        p &copy; 2010-2016 Wolson Design :: 
-          a.body-link(href="/sitemap.html") Sitemap
-
+    include ../components/footer/footer-congratulations.jade
     include ../components/script-calls/script-calls.jade
     script.
       // smooth scrolling for anchor tags
