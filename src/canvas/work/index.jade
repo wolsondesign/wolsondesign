@@ -1,7 +1,7 @@
 doctype html
 html.no-js(lang="en")
   head
-    meta(charset="utf-8")
+    meta(charset="utf-8") 
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     title Work :: Andrew Wolson :: UX/UI Designer, Print Designer
     meta(name="description" content="Featured are my most recent UX/UI and print design projects.")
@@ -11,39 +11,62 @@ html.no-js(lang="en")
     // [if lt IE 8] <!
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     include ../../components/masthead/masthead.jade
-    main.grid
-      section.col-3-3
-        h1 Digital
-        article.col-3-3(style="padding-right: 0;")
-          a(href="/work/everbank-loan-officer-website.html")
-            img(src="/img/work/everbank/everbank-loan-officer-website-homepage-cover.jpg")
-            p EverBank
-        article.col-1-3
-          a(href="/work/aiga-jacksonville.html")
-            img(src="/img/work/aiga-jacksonville/aiga-jacksonville-work-cover.jpg")
-            p AIGA Jacksonville
-        article.col-1-3
-          a(href="/work/fontslate-website.html")
-            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/font-slate-mockup.jpg")
-            p FontSlate
-        article.col-1-3(style="padding-right: 0;")
-          a(href="/work/discover-design-2016.html")
-            img(style="width: 95%;" src="/img/work/discover-design-2016/discover-design-2016-work-cover.jpg")
-            p Discover Design 2016
-      section.col-3-3
-        hr
-        h2 Print
-        article.col-1-3
-          a(href="/work/wedding-collateral.html")
-            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/wedding-invitations-mockup.jpg")
-            p Wolson Wedding
-        article.col-1-3
-          a(href="/work/bru-hast.html")
-            img(src="/img/work/bru-hast/bru-hast-work-homepage-cover.png")
-            p Brü Hast
-        article.col-1-3(style="padding-right: 0;")
-          a(href="/work/raisin-hell.html")
-            img(style="width: 95%;" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71894/raisin-hell-mockup.jpg")
-            p Raisin Hell
-  include ../../components/footer/footer.jade  
+    main(style="float: left; width: 100%;")
+      section.work-feature-1
+        article.feature-text
+          h2 EverBank
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/everbank-loan-officer-website.html") View Case Study
+
+      section.work-feature-2
+        article.feature-text
+          h2 AIGA Jacksonville
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/aiga-jacksonville.html") View Case Study
+
+      section.work-feature-3
+        article.feature-text
+          h2 FontSlate
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/fontslate-website.html") View Case Study
+
+      section.work-feature-4
+        article.feature-text
+          h2 Discover Design 2016
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/discover-design-2016.html") View Case Study
+
+      section.work-feature-5
+        article.feature-text
+          h2 Wolson Wedding
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/wedding-collateral.html") View Case Study
+
+      section.work-feature-6
+        article.feature-text
+          h2 Brü Hast
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/bru-hast.html") View Case Study
+
+      section.work-feature-7
+        article.feature-text
+          h2 Raisin Hell
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/raisin-hell.html") View Case Study
+  include ../../components/cta/contact-social-media.jade
+  include ../../components/footer/footer-congratulations.jade
   include ../../components/script-calls/script-calls.jade

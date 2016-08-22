@@ -3,24 +3,26 @@ html.no-js(lang="en")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title site map of wolsondesign.com
-    meta(name="description" content="")
+    title Sitemap :: :: Andrew Wolson :: UX/UI Designer, Print Designer
+    meta(name="description" content="You will find the general structure of my site here")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="apple-touch-icon" href="apple-touch-icon.png")
   body 
     // [if lt IE 8] <!
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser to improve your experience.
     include ../components/masthead/masthead.jade
-    main.grid
-      article.col-3-3
-        ul
-          li
-            a(href="/thoughts") thoughts
-          li
-            a(href="/work") work
-          li
-            a(href="/about") about
-          li
-            a(href="/contact") contact  
-  include ../components/footer/footer.jade
+    .callout
+          h1 Welcome to my <span style="text-decoration: line-through;">Dungeon</span> Sitemap.
+    ul.sitemap.flat-list
+      li.homepage
+        a.btn-white-bg(href="/") Homepage
+    ul.sitemap.flat-list
+      li.thoughts
+        a.btn-white-bg(href="/thoughts") Thoughts
+      li.work
+        a.btn-white-bg(href="/work") Work
+      li.about
+        a.btn-white-bg(href="/about") About
+      li.contact
+        a.btn-white-bg(href="/contact") Contact  
   include ../components/script-calls/script-calls.jade
