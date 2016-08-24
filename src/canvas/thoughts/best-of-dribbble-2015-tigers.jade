@@ -12,7 +12,7 @@ html.no-js(lang="en")
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser to improve your experience.
     include ../../components/masthead/masthead.jade
     main.grid
-      article.col-3-3
+      article.col-3-3(style="margin-top: 45px;")
         .col-1-4(itemscope="" itemtype="http://schema.org/Article")
             span(itemprop="author" itemscope="" itemtype="http://schema.org/Person")
               h5
@@ -69,9 +69,8 @@ html.no-js(lang="en")
 
           p By no means is this all of the Tigers I captured this year. Check out my bucket to see more great Tiger illustrations. 
             a.body-link(href="https://dribbble.com/wolsondesign/buckets/220052-TIGERS" target="_blank") Take me to more tigers!
-          hr
-          include ../../components/cta/thoughts.jade
-    include ../../components/footer/footer.jade
+    include ../../components/cta/thoughts.jade
+    include ../../components/cta/contact-social-media.jade
     include ../../components/script-calls/script-calls.jade
             
     

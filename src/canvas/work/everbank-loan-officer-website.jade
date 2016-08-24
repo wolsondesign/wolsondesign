@@ -21,7 +21,7 @@ html.no-js(lang="en")
       .grid
         section.col-3-3
           .col-1-4
-            &nbsp;
+            | &nbsp;
           .col-1-2
             h2 How do you enhance the User Experience for the production team?
             p The project started by working with Business Analyst Jody Washick. She saw the issues I was experiencing creating the websites for the new loan officers. So she started by documenting the entire Loan Officer web site process. Then she looked at how to enhance the entire process. I supported Jody by providing information of how the process worked. She came up with a more efficient process and sold it to the higher ups and thus began the project.
@@ -115,17 +115,19 @@ html.no-js(lang="en")
                 h4 John Apostol
                 h6 Front-end Developer
               .col-1-3
-                h4 Matthew Sherwood
-                h6 Back-end Developer
-              .col-1-3
-                h4 Jay Lewis
-                h6 Web Analyst
-              .col-1-3
                 h4 Jody Washick
                 h6 Business Analyst
               .col-1-3
-                &nbsp;
-            hr
-      include ../../components/cta/work.jade
-    include ../../components/footer/footer.jade  
+                h4 Jay Lewis
+                h6 Web Analyst
+              .col-3-3(style="text-align: center; margin-top: 20px;")
+                h4 Matthew Sherwood
+                h6 Back-end Developer
+          section.col-3-3
+            .col-1-4.mobile-hide
+              | &nbsp;
+            .col-1-2
+              hr
+    include ../../components/cta/work.jade
+    include ../../components/cta/contact-social-media.jade
     include ../../components/script-calls/script-calls.jade

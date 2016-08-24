@@ -14,8 +14,8 @@ html.no-js(lang="en")
     main.grid
       article.col-3-3
         .col-1-4.mobile-hide
-          &nbsp;
-        .col-1-2
+          | &nbsp;
+        .col-1-2(style="margin-top: 45px;")
           h1 User Experience and Graphic Design
           p Highly creative and accomplished technology and marketing professional with a solid history of creating strong, clean, interactive, and intuitive sites. Knowledgable in HTML/JADE, CSS/SASS and is willing to learn any web language necessary. Successful in managing projects from inception to deployment.
           h2 Professional Experience
@@ -90,7 +90,7 @@ html.no-js(lang="en")
             br
             | Designed the overall look and redesign of the newspaper.
           
-        .col-1-4.resume-block
+        .col-1-4.resume-block(style="margin-top: 45px;")
           h2 Education
           h3 BFA in Graphic Design
           p Savannah College of Art and Design 
@@ -142,17 +142,9 @@ html.no-js(lang="en")
             | Sitecore
             br
             | Microsoft TFS
-
-      article.col-3-3
-        .col-1-4.mobile-hide
-          |  &nbsp;
-        .col-1-2
-          hr
-      section.col-3-3
-        ul.flat-list
-          li
-            p 
-              a.btn-white-bg(href="/andrew_wolson_resume.pdf") 
-                | download my resume &#x2193;
-    include ../../components/footer/footer.jade  
+      
+    a.cta-bar(href="/andrew_wolson_resume.pdf")
+      section
+        p download my resume &#x2193;
+    include ../../components/cta/contact-social-media.jade
     include ../../components/script-calls/script-calls.jade

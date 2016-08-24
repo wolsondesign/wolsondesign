@@ -36,14 +36,14 @@ if($_POST["submit"]) {
         <header id="navigation"><a href="#menu" class="body-link black-bg menu-link">Menu</a>
           <nav id="menu" role="navigation">
             <ul>
-              <li><a href="/work"> 
-                  <p class="body-link">Work</p></a></li>
-              <li><a href="/about"> 
-                  <p class="body-link">About</p></a></li>
-              <li><a href="/contact"> 
-                  <p class="body-link">Contact</p></a></li>
               <li><a href="/thoughts"> 
                   <p class="body-link">Thoughts</p></a></li>
+              <li><a href="/contact"> 
+                  <p class="body-link">Contact</p></a></li>
+              <li><a href="/about"> 
+                  <p class="body-link">About</p></a></li>
+              <li><a href="/work"> 
+                  <p class="body-link">Work</p></a></li>
             </ul>
           </nav>
         </header>
