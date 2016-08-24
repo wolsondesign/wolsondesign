@@ -13,7 +13,7 @@ html.no-js(lang="en")
         strong outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser to improve your experience.
     include ../../components/masthead/masthead.jade
     main.grid
-      article.col-3-3
+      article.col-3-(style="margin-top: 45px;")
         .col-1-4(itemscope="" itemtype="http://schema.org/Article" class="This is my process for designing a t-shirt for Cotton Bureau.")
           h5
             meta(itemprop="datePublished" content="2013-11-18") 
@@ -51,7 +51,6 @@ html.no-js(lang="en")
             | . Fortunately they liked the design enough to give it a shot on their site. But the shirt didn’t sell enough to make it a reality. This is not the end. If enough people sign up for the shirt on their site, it will be brought back again.
           p 
             a.body-link(href="https://cottonbureau.com/products/the-bear-dont-care") Let’s make this shirt a reality!
-          hr
-        include ../../components/cta/thoughts.jade
-    include ../../components/footer/footer.jade
+    include ../../components/cta/thoughts.jade
+    include ../../components/cta/contact-social-media.jade
     include ../../components/script-calls/script-calls.jade

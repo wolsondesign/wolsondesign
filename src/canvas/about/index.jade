@@ -14,8 +14,8 @@ html.no-js(lang="en")
     main.grid
       article.col-3-3
         .col-1-4.mobile-hide
-          |  &nbsp;
-        .col-1-2
+          | &nbsp;
+        .col-1-2(style="margin-top: 45px;")
           h1
             | Why I am a Designer.
           p 
@@ -23,23 +23,15 @@ html.no-js(lang="en")
           p 
             | All of the layers of meaning, the visual richness, and scale inspired me. After that trip I knew I wanted to be a creative. I strive to bring the strength and power to my work. Much like the strength and power Dali brought to his work.
           h2
-            |My creative process overview.
+            | My creative process overview.
           p 
             | Design is a game to me. I play with many different elements to create a solution. In the process, I enjoy playing with color or using scale to convey my message. This makes me not take what I do too seriously. It also allows myself to not get stuck in a certain way. By doing this, I am resting on the laurels of the future rather than the past.
           p 
             | My process is an evolution. You never know what the outcome of the process will be. Through learning what the problem is, understanding the audience, and understanding the needs of the clients the solution becomes clear. I am driven by the journey to the solution.
-          
         .col-1-4
-          &nbsp;
-      article.col-3-3
-        .col-1-4.mobile-hide
-          |  &nbsp;
-        .col-1-2
-          hr
-      section.col-3-3
-        ul.flat-list
-          li
-            p  
-              a.btn-white-bg(href="/about/resume.html") View my resume &#x2192;
-    include ../../components/footer/footer.jade  
+          | &nbsp;
+    a.cta-bar(href="/about/resume.html")
+      section
+        p View my resume &#x2192;
+    include ../../components/cta/contact-social-media.jade
     include ../../components/script-calls/script-calls.jade

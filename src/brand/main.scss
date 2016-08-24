@@ -1037,7 +1037,7 @@ textarea {
     }
 
     @media screen and (min-width: $break-xlarge-width) {
-      min-height: 252px;
+      min-height: 271px;
     }
 
     h2 {
@@ -1092,6 +1092,7 @@ textarea {
 
       @media screen and (min-width: $break-xlarge-width) {
         border: 1px solid $orange;
+        min-height: 271px;
       }
     }
 
@@ -1103,6 +1104,7 @@ textarea {
 
       @media screen and (min-width: $break-xlarge-width) {
         border: 1px solid $orange;
+        min-height: 271px;
       }
     }
 
@@ -1113,7 +1115,7 @@ textarea {
       @media screen and (min-width: $break-xlarge-width) {
         border-left: none;
         border-right: none;
-
+        min-height: 271px;
       }
     }
 
@@ -1125,6 +1127,7 @@ textarea {
       @media screen and (min-width: $break-xlarge-width) {
         border-top: 1px solid $orange;
         border-bottom: 1px solid $orange;
+        min-height: 271px;
       }
 
       h5 {
