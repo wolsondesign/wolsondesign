@@ -1,0 +1,44 @@
+doctype html
+html.no-js(lang="en")
+  head
+    meta(charset="utf-8") 
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title Archive :: Andrew Wolson :: UX/UI Designer, Print Designer
+    meta(name="description" content="This is the work I have completed in the past.")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="apple-touch-icon" href="apple-touch-icon.png")
+  body
+    // [if lt IE 8] <!
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    include ../../components/masthead/masthead.jade
+
+    main(style="float: left; width: 100%;")
+      section.raisin-hell.feature-1-2
+        article.feature-text
+          h2 Raisin Hells
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/raisin-hell.html") View Case Study
+      .callout(style="float: left;")
+        h1 Student work
+
+      section.spit-fire.feature-1-2
+        article.feature-text
+          h2 Spit Fire
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/spit-fire.html") View Case Study
+      
+      section.zuzana-licko-poster.feature-1-2
+        article.feature-text
+          h2 Zuzana Licko lecture poster
+          ul.flat-list
+            li
+              p
+                a.btn-white-bg(href="/work/zuzana-licko-poster.html") View Case Study
+      
+  include ../../components/cta/contact-social-media.jade
+  include ../../components/footer/footer-congratulations.jade
+  include ../../components/script-calls/script-calls.jade
