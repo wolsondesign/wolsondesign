@@ -35,7 +35,7 @@
         <div class="introduction-text">
           <h1>EverBank</h1>
           <h5>UX Design and Front-end Development</h5>
-          <p>At EverBank I was a dedicated UX designer for the Retail Loan Origination division. The division supported Retail Loan Officers (RLO). RLOs go out into the world and bring in Loans for the bank. Because of this they need marketing material to support them. Each RLO has a specialized website. The goal of the project was to make the entire loan process more efficient from start to finish.</p>
+          <p>As a UX designer, one of my responsibilities was to support the Retail Loan Origination division, specifically Retail Loan Officers (RLO). As part of their marketing materials, I created a specialized website for each loan officer. The strategic objective for the project was to make the loan process more efficient from start to finish.</p>
         </div>
       </div>
       <div class="grid">
@@ -183,9 +183,19 @@
         <h5>Dribbble</h5></a><a href="https://github.com/wolsondesign" class="github"> 
         <h5>Github</h5></a><a href="https://twitter.com/wolsondesign" class="twitter"> 
         <h5>Twitter</h5></a></section>
-    <link rel="stylesheet" href="../css/normalize.min.css">
-    <link rel="stylesheet" href="../css/main.min.css">
-    <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link href="../css/main.min.css" rel="stylesheet">
+    <script>
+      function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/js/vendor/modernizr-2.8.3.min.js";
+      document.body.appendChild(element);
+      }
+      if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
+    </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="/js/main.js"></script>
