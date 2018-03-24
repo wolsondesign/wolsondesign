@@ -800,7 +800,7 @@ textarea {
     }
 
     article {
-      max-width: 430px;
+      max-width: 800px;
       margin: 0 auto;
       @media screen and (min-width: $break-large-width) {
         max-width: 600px;
@@ -812,13 +812,10 @@ textarea {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color: $white;
-      font-size: 5.4em;
+      font-size: 7rem;
+      letter-spacing: -0.04rem;
       line-height: 1em;
       text-align: center;
-
-      @media screen and (min-width: $break-large-width) {
-        font-size: 10em;
-      }
     }
 
     h2 {
@@ -980,127 +977,37 @@ textarea {
 
   /*HOMEPAGE CONTACT SECTION */
   .homepage-contact-callout {
-    padding: 20px;
+    padding: 40px;
     background: $black;
     float: left;
     width: 100%;
 
-    @media screen and (min-width: $break-medium-width) {
-      width: 50%;
-      min-height: 511px;
-      padding: 50px;
-    }
-
-    @media screen and (min-width: $break-large-width) {
-      min-height: 527px;
-    }
-
-    @media screen and (min-width: $break-xlarge-width) {
-      min-height: 271px;
-    }
-
     h2 {
+      font-size: 2rem;
+      letter-spacing: -0.01rem;
       color: $white;
     }
 
     p {
-
-      @media screen and (min-width: $break-xlarge-width) {
-        margin-bottom: 0;
-      }
+      font-size: 1.9rem;
+      letter-spacing: -0.001rem;
+      color: #ff851b;
     }
-  }
 
-  .homepage-social-lockup {
-    float: left;
-    width: 100%;
-    text-align: center;
+    h2, p {
+      margin-bottom: 0;
+      text-align: center;
+    }
 
     @media screen and (min-width: $break-medium-width) {
-      width: 50%;
-    }
-
-    .twitter, .linkedin, .dribbble, .github {
-      padding: 80px 0;
-      
-
-      &:hover {
-        background: $orange;
-        transition: all 0.5s ease;
+      h2 {
+        font-size: 3rem;
+        letter-spacing: -0.01rem;
       }
 
-      @media screen and (min-width: $break-medium-width) {
-        padding: 109px 0;
-      }
-
-      @media screen and (min-width: $break-large-width) {
-        padding: 113px 0;
-      }
-
-      @media screen and (min-width: $break-xlarge-width) {
-        width: 25%;
-        padding: 107px 0;
-      }
-    }
-
-    .twitter {
-      background: $twitter;
-      border-left: 1px solid $orange;
-      border-right: 1px solid $orange;
-      border-bottom: 1px solid $orange;
-
-      @media screen and (min-width: $break-xlarge-width) {
-        border: 1px solid $orange;
-        min-height: 271px;
-      }
-    }
-
-    .linkedin {
-      background: $linkedin;
-      border-top: 1px solid $orange;
-      border-left: 1px solid $orange;
-      border-bottom: 1px solid $orange;
-
-      @media screen and (min-width: $break-xlarge-width) {
-        border: 1px solid $orange;
-        min-height: 271px;
-      }
-    }
-
-    .dribbble {
-      background: $dribbble;
-      border: 1px solid $orange;
-
-      @media screen and (min-width: $break-xlarge-width) {
-        border-left: none;
-        border-right: none;
-        min-height: 271px;
-      }
-    }
-
-    .github {
-      background: $black;
-      border-left: 1px solid $orange;
-      border-bottom: 1px solid $orange;
-
-      @media screen and (min-width: $break-xlarge-width) {
-        border-top: 1px solid $orange;
-        border-bottom: 1px solid $orange;
-        min-height: 271px;
-      }
-
-      h5 {
-        color: $white;
-      }
-    }
-
-    a {
-      width: 50%;
-      float: left;
-      min-height: 200px;
-
-      @media screen and (min-width: $break-medium-width) {
-        min-height: 100px;
+      p {
+        font-size: 2.8rem;
+        letter-spacing: -0.001rem;
       }
     }
   }
@@ -2273,26 +2180,6 @@ textarea {
     margin-bottom: 20px;
   }
 
-  footer {
-
-    .social-links {
-      background: $grey-dark; 
-      color: $white;
-      float: left;
-      width: 100%;
-      padding: 15px;
-
-      .icon-dribbble,
-      .icon-github,
-      .icon-linkedin,
-      .icon-tumblr,
-      .icon-twitter {
-        color: white;
-        font-size: 2em;
-      }
-    }
-  }
-
   aside h5 {
     text-transform: uppercase;
   }
@@ -2424,18 +2311,6 @@ textarea {
 
   /* BROWSER SUPPORT */
   @-moz-document url-prefix() {
-    .chevron {
-      &:before {
-        width: 50.1%;
-      }
-      &:after {
-        width: 50.1%;
-      }
-    }
-
-    .chevron-intro {
-      margin-top: -19px;
-    }
 
     footer {
       article {
