@@ -581,213 +581,68 @@ textarea {
    ========================================================================== */
 
    /*  ==================================================
-     1. FORM
-     2. FLOATING LABELS
-     3. HOMEPAGE
-     4. INTERNAL PAGES
-     5. WORK
-     6. NAVIGATION
-     7. MASTHEAD
-     8. BUTTON
-     9. FLAT LIST
-     10. GENERAL STYLES
-     11. GRID
-     12. ICON
-     13. BROWSER SUPPORT
-     
+    HOMEPAGE
+    INTERNAL PAGES
+    WORK
+    NAVIGATION
+    MASTHEAD
+    BUTTON
+    FLAT LIST
+    GENERAL STYLES
+    GRID
+    ICON
+    BROWSER SUPPORT
    ==================================================  */
-  /* FORM */
-  fieldset {
-    border: none;
+  
+  /* FOOTER */
+
+  footer {
+    width: 100%;
+    background: $black;
+    float: left;
+    padding: 40px;
+    color: $white;
+
+    .copyright {  
+      text-align: center;
+    }
   }
 
-  .success {
+  /*HOMEPAGE CONTACT SECTION */
+  .homepage-contact-callout {
+    h2 {
+      font-size: 2rem;
+      letter-spacing: -0.01rem;
+      color: $white;
+    }
 
     p {
-      color: $white;
-      background-color: $grey-dark;
-      padding: 15px;
+      font-size: 1.9rem;
+      letter-spacing: -0.001rem;
+      color: #ff851b;
+    }
+
+    h2, p {
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    @media screen and (min-width: $break-medium-width) {
+      h2 {
+        font-size: 3rem;
+        letter-spacing: -0.01rem;
+      }
+
+      p {
+        font-size: 2.8rem;
+        letter-spacing: -0.001rem;
+      }
     }
   }
 
-  .cd-form::after {
-     clear: both;
-     content: "";
-     display: table;
-  }
 
-  .cd-form {
-
-    legend {
-      margin: 20px 0;
-      padding-bottom: 10px;
-    }
-
-    div {
-      margin: 20px 0;
-      position: relative;
-    }
-
-    h4, .cd-label {
-      color: $blue-mid;
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-    }
-
-    .cd-label {
-      display: block;
-    }
-
-    label {
-      color: $white;
-    }
-  } 
-
-  .cd-form input,
-  .cd-form textarea,
-  .cd-form select {
-    color: $black;
-  }
-
-  .cd-form textarea,
-  .cd-form select ,
-  .cd-form label {
-    font-size: 1.6rem;
-  }
-
-  input#cd-name,
-  input#cd-company,
-  input#cd-email,
-  textarea#cd-textarea {
-    font-size: 1em;
-  }
-
-  .cd-form input[type="text"],
-  .cd-form input[type="email"],
-  .cd-form textarea,
-  .cd-form select,
-  .cd-form legend {
-    display: block;
-    width: 100%;
-    -webkit-appearance: none;
-      -moz-appearance: none;
-       -ms-appearance: none;
-         -o-appearance: none;
-            appearance: none;
-   }
-   
-  .cd-form input[type="text"],
-  .cd-form input[type="email"],
-  .cd-form textarea,
-  .cd-form select {
-    background-color: $white;
-    border-radius: .25em;
-    border: 1px solid $black;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
-    padding: 12px;
-  }
-
-  .cd-form input[type="text"]:focus,
-  .cd-form input[type="email"]:focus,
-  .cd-form textarea:focus,
-  .cd-form select:focus {
-    border-color: #2c97de;
-    box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
-    outline: none;
-  }
-
-  .cd-form .cd-select {
-    position: relative;
-  }
-
-  .cd-form .cd-select::after {
-    /* arrow icon for select element */
-    content: '';
-    display: block;
-    height: 16px;
-    margin-top: -8px;
-    pointer-events: none;
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    width: 16px;
-    z-index: 1;
-  }
-
-  .cd-form select {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    cursor: pointer;
-  }
-
-  .cd-form select::-ms-expand {
-    display: none;
-  }
-   
-  .cd-form .cd-form-list {
-    margin-top: 16px;
-  }
-  
-  .cd-form .cd-form-list::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .cd-form textarea {
-    min-height: 150px;
-    resize: vertical;
-    overflow: auto;
-  }
-  
-  .cd-form .error-message p {
-    -moz-osx-font-smoothing: grayscale;
-     -webkit-font-smoothing: antialiased;
-    background: $red;
-    border-radius: .25em;
-    color: $white;
-    font-size: 1.4rem;
-    padding: 16px;
-    text-align: center;
-  }
-
-  .cd-form .error {
-    border-color: $red !important;
-    color: $red;
-    font-size: 1em;
-  }
-
-  .cd-form [required] {
-    background: url("/img/cd-required.svg") no-repeat top right $white;
-  }
-
-  /* FLOATING LABELS */
-  .js .floating-labels div {
-    margin: 28px 0;
-  }
-
-  .js .floating-labels .cd-label {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    font-size: 1.2rem;
-    cursor: text;
-    -webkit-transition: top 0.2s, left 0.2s, font-size 0.2s;
-       -moz-transition: top 0.2s, left 0.2s, font-size 0.2s;
-            transition: top 0.2s, left 0.2s, font-size 0.2s;
-  }
-
-  .js .floating-labels .icon .cd-label {
-    left: 15px;
-  }
-
-  .js .floating-labels .cd-label.float {
-    /* move label out the input field */
-    top: -22px;
-    left: 0 !important;
-  }
 
   /* HOMEPAGE */
-
   .homepage-intro {
     background: $black;
     padding: 30px;
@@ -972,55 +827,6 @@ textarea {
 
     p {
       max-width: 450px;
-    }
-  }
-
-  /*HOMEPAGE CONTACT SECTION */
-  .homepage-contact-callout {
-    padding: 40px;
-    background: $black;
-    float: left;
-    width: 100%;
-
-    h2 {
-      font-size: 2rem;
-      letter-spacing: -0.01rem;
-      color: $white;
-    }
-
-    p {
-      font-size: 1.9rem;
-      letter-spacing: -0.001rem;
-      color: #ff851b;
-    }
-
-    h2, p {
-      margin-bottom: 0;
-      text-align: center;
-    }
-
-    @media screen and (min-width: $break-medium-width) {
-      h2 {
-        font-size: 3rem;
-        letter-spacing: -0.01rem;
-      }
-
-      p {
-        font-size: 2.8rem;
-        letter-spacing: -0.001rem;
-      }
-    }
-  }
-
-  /* HOMEPAGE FOOTER */
-  .homepage-footer {
-    width: 100%;
-    float: left;
-    padding: 20px;
-
-    @media screen and (min-width: $break-medium-width) {
-      padding: 50px;
-      text-align: center;
     }
   }
 
@@ -2311,15 +2117,6 @@ textarea {
 
   /* BROWSER SUPPORT */
   @-moz-document url-prefix() {
-
-    footer {
-      article {
-        .flat-list {
-          margin-top: 9px;
-        }
-      }
-    }
-
     .flat-list {
       &.secondary-button {
         margin-right: auto;
